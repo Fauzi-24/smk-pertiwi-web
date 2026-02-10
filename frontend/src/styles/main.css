@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@400;500;600;700&display=swap');
+
+/* CSS Variables - Simple Light Theme */
+:root {
+    --font-sans: 'Sora', 'Plus Jakarta Sans', 'Manrope', 'Space Grotesk', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+    --primary-color: #2563EB;
+    --primary-light: #DBEAFE;
+    --primary-dark: #1E40AF;
+    --accent-color: #22C55E;
+    --primary-gradient: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    --user-msg-bg: var(--primary-color);
+    --user-msg-text: #FFFFFF;
+    --ai-msg-bg: #F3F4F6;
+    --ai-msg-text: #111827;
+    --text-primary: #111827;
+    --text-secondary: #6B7280;
+    --background: #FFFFFF;
+    --background-dark: #F9FAFB;
+    --white: #FFFFFF;
+    --surface: #FFFFFF;
+    --surface-2: #F9FAFB;
+    --gray-light: #E5E7EB;
+    --gray-medium: #D1D5DB;
+    --gray-dark: #6B7280;
+    --card-bg: #FFFFFF;
+    --border-color: #E5E7EB;
+    --disabled-bg: #E5E7EB;
+    --shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    --shadow-hover: 0 8px 20px rgba(15, 23, 42, 0.12);
+    --shadow-light: 0 2px 6px rgba(15, 23, 42, 0.06);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 12px;
+    --radius-xl: 16px;
+    --transition: all 0.2s ease;
+}
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--text-primary);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--background);
+}
+
+#app {
+    min-height: 100vh;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gray-light);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gray-medium);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gray-dark);
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.gap-2 { gap: 0.5rem; }
+.gap-4 { gap: 1rem; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.p-4 { padding: 1rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.fade-in {
+    animation: fadeIn 0.3s ease-out;
+}
+
+.slide-in {
+    animation: slideIn 0.3s ease-out;
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    :root {
+        --radius-lg: 10px;
+        --radius-xl: 12px;
+    }
+    
+    .message-wrapper {
+        max-width: 85% !important;
+    }
+    
+    .welcome-card {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: flex-start;
+    }
+    
+    .school-tags {
+        margin-top: 0.75rem;
+    }
+    
+    .message-wrapper {
+        max-width: 95% !important;
+    }
+    
+    .messages-container {
+        gap: 0.5rem;
+    }
+    
+    .chat-main {
+        padding: 1rem;
+    }
+    
+    .welcome-card {
+        padding: 1.25rem;
+        max-width: 95%;
+    }
+    
+    .features {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+}

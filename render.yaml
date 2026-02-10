@@ -1,0 +1,40 @@
+﻿services:
+  - type: web
+    name: smk-pertiwi-backend
+    runtime: python
+    rootDir: backend
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: SERPAPI_API_KEY
+        sync: false
+      - key: ENABLE_WEB_SEARCH
+        value: "true"
+      - key: SERPAPI_ENGINE
+        value: "google"
+      - key: SERPAPI_HL
+        value: "id"
+      - key: SERPAPI_GL
+        value: "id"
+      - key: WEB_SEARCH_CACHE_TTL
+        value: "1800"
+      - key: WEB_SEARCH_CACHE_MAX
+        value: "120"
+      - key: CORS_ORIGINS
+        value: "https://ganti-dengan-domain-frontend-render.onrender.com"
+      - key: ADMIN_KEY
+        sync: false
+
+  - type: web
+    name: smk-pertiwi-frontend
+    runtime: static
+    rootDir: frontend
+    plan: free
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: "https://ganti-dengan-domain-backend-render.onrender.com"

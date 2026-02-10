@@ -1,0 +1,13 @@
+[
+  {
+    "id": "29e36358a3ef4ec385c4b17089b39db3",
+    "action": "reject",
+    "feedback_id": "0df4a151f51f43b1907415cdc8e25a25",
+    "admin_id": "350a86652bab",
+    "timestamp": "2026-02-10T00:02:14.336924",
+    "ip": "127.0.0.1",
+    "question": "ini foto apa",
+    "conversation_id": "chat_1770646859569",
+    "session_id": "session_1770647947.618079"
+  }
+]

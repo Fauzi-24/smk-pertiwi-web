@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1F61C6"/>
+      <stop offset="100%" stop-color="#0B3F95"/>
+    </linearGradient>
+  </defs>
+  <path d="M48 4 L82 24 L72 78 L48 92 L24 78 L14 24 Z" fill="url(#shield)" stroke="#0A2C70" stroke-width="3"/>
+  <text x="48" y="22" text-anchor="middle" font-family="Space Grotesk, Manrope, 'Segoe UI', sans-serif" font-size="11" font-weight="700" fill="#FFFFFF">SMK</text>
+  <text x="48" y="34" text-anchor="middle" font-family="Space Grotesk, Manrope, 'Segoe UI', sans-serif" font-size="9" font-weight="700" fill="#FFFFFF">PERTIWI</text>
+  <circle cx="48" cy="53" r="18" fill="#E61C2B" stroke="#600A14" stroke-width="3"/>
+  <circle cx="48" cy="53" r="10" fill="#101010" stroke="#FFFFFF" stroke-width="2"/>
+  <circle cx="48" cy="53" r="5" fill="#FFFFFF"/>
+  <circle cx="53" cy="51" r="2" fill="#101010"/>
+  <circle cx="43" cy="51" r="2" fill="#101010"/>
+  <text x="48" y="86" text-anchor="middle" font-family="Space Grotesk, Manrope, 'Segoe UI', sans-serif" font-size="10" font-weight="700" fill="#FFFFFF">KNG</text>
+</svg>

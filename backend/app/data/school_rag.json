@@ -1,0 +1,504 @@
+{
+  "source": "schoolData.js",
+  "generated_at": "2026-02-10T08:27:23.195060",
+  "documents": [
+    {
+      "id": "profil-sekolah",
+      "title": "Profil Sekolah",
+      "content": "Nama: SMK Pertiwi Kuningan\nAlamat: Jl. Siliwangi No.26A, Kasturi, Kec. Cilimus, Kabupaten Kuningan, Jawa Barat 45521\nKepala Sekolah: Dea Ariana Vamtrianto, SE., M.Si.",
+      "tags": [
+        "profil",
+        "sekolah"
+      ]
+    },
+    {
+      "id": "sejarah",
+      "title": "Profil Singkat",
+      "content": "SMK Pertiwi Kuningan adalah STM pertama di Kabupaten Kuningan (berdiri 1979) di lahan +/-20.000 m2. Sudah meluluskan lebih dari 11.000 alumni yang bekerja di industri/pemerintahan, kuliah di PTN/PTS, atau berwirausaha. Siswa aktif kini 2.345 dengan kurikulum industri dan fasilitas praktik lengkap termasuk kolam renang.",
+      "tags": [
+        "sejarah",
+        "profil"
+      ]
+    },
+    {
+      "id": "visi-misi",
+      "title": "Visi dan Misi",
+      "content": "Visi: Mewujudkan lulusan SMK Pertiwi Kuningan memiliki akhlak mulia, kompeten, berprestasi, dan berjiwa wirausaha.\nMisi:\n- Membentuk lulusan beriman dan bertakwa kepada Tuhan Yang Maha Esa.\n- Memiliki hardskill dan softskill berstandar industri dan dunia kerja.\n- Meningkatkan prestasi akademik dan non-akademik.\n- Menyiapkan tamatan mandiri dan berwirausaha melalui produk kreatif.",
+      "tags": [
+        "visi",
+        "misi"
+      ]
+    },
+    {
+      "id": "tujuan",
+      "title": "Tujuan Sekolah",
+      "content": "- Menjadikan lulusan insan kamil.\n- Lulusan terserap di dunia usaha/dunia kerja dan hidup layak.\n- Membentuk lulusan unggul, disiplin, produktif, profesional.\n- Memberi kompetensi tambahan lewat kegiatan kokurikuler.\n- Mendorong lulusan membuka peluang usaha di berbagai bidang.",
+      "tags": [
+        "tujuan"
+      ]
+    },
+    {
+      "id": "keunggulan",
+      "title": "Keunggulan Sekolah",
+      "content": "- Salah satu sekolah terbaik di Jawa Barat\n- Terakreditasi A \"Sangat Baik\"\n- Bersertifikat ISO 9001:2015 (Sistem Manajemen Mutu)\n- Fasilitas ruang dan alat praktik standar industri\n- Kelas Khusus Yamaha Grade A\n- Axioo Class Program Rujukan Nasional Level A\n- SMK binaan BNI\n- SMK binaan Toyota AUTO 2000\n- Penerapan kurikulum industri\n- Sekolah dengan program Teaching Factory\n- BCA Cash Management Academy\n- Sekolah pencetak wirausaha\n- Sekolah berbasis digital\n- Sekolah rujukan nasional\n- Desain bangunan modern, hijau, dan nyaman\n- MoU dengan 87 industri mitra siap serap lulusan\n- Program beasiswa yayasan & prestasi (bebas biaya 3 tahun)\n- SMK Center of Excellence (SMK CoE)\n- SMK Pusat Keunggulan (SMK PK)\n- Memiliki kolam renang sebagai sarana olahraga",
+      "tags": [
+        "keunggulan"
+      ]
+    },
+    {
+      "id": "fakta",
+      "title": "Fakta Singkat",
+      "content": "- Berdiri 1979 (STM pertama di Kuningan)\n- Luas lahan +/-20.000 m2\n- Alumni > 11.000\n- Siswa aktif 2.345\n- Kolam renang & fasilitas olahraga",
+      "tags": [
+        "fakta",
+        "data singkat"
+      ]
+    },
+    {
+      "id": "jadwal",
+      "title": "Jadwal Pelajaran",
+      "content": "- 07.00 - 07.40\n- 07.40 - 08.20\n- 08.20 - 09.00\n- 09.00 - 09.40\n- 09.40 - 10.20\n- 10.20 - 10.40 (Istirahat)\n- 10.40 - 11.20\n- 11.20 - 12.00\n- 12.00 - 12.40\n- 12.40 - 13.00 (Istirahat)\n- 13.00 - 13.40\n- 13.40 - 14.20\n- 14.20 - 15.00",
+      "tags": [
+        "jadwal",
+        "jam sekolah"
+      ]
+    },
+    {
+      "id": "jurusan",
+      "title": "Daftar Jurusan",
+      "content": "Rekayasa Perangkat Lunak (RPL): Fokus pada software engineering, arsitektur aplikasi web/mobile, DevOps dasar, UI/UX, dan kolaborasi agile. Siswa dibiasakan dengan project-based learning dan portofolio produk digital.\nTeknik Komputer dan Jaringan (TKJ): Mendalami desain dan implementasi jaringan kabel/ nirkabel, virtualisasi server, keamanan jaringan dasar, serta monitoring infrastruktur. Ada praktik konfigurasi perangkat Cisco/MikroTik.\nTeknik Kendaraan Ringan (TKR): Pembelajaran diagnosa dan perawatan kendaraan bensin/EV ringan, sistem EFI, transmisi otomatis, hingga pemakaian scan tool modern untuk troubleshooting.\nTeknik Sepeda Motor (TSM): Praktik tune-up, overhaul, sistem injeksi, kelistrikan, dan perawatan motor harian/kompetisi. Termasuk pemahaman keselamatan kerja dan layanan pelanggan.\nOtotronik (TO): Fokus pada elektronik otomotif modern: sensor/actuator, ECU, CAN bus, sistem keselamatan aktif, dan integrasi smart car. Banyak praktik menggunakan simulator dan alat ukur.\nLayanan Perbankan (LP): Materi pelayanan nasabah, produk perbankan, akuntansi dasar, manajemen kas, serta fintech & digital banking. Menekankan etika layanan dan keamanan data.\nBisnis Daring dan Pemasaran (BDP): Strategi digital marketing, copywriting, konten sosial media, marketplace, analitik, dan campaign performance. Ada praktik membuat brand kit dan toko daring end-to-end.",
+      "tags": [
+        "jurusan",
+        "kompetensi",
+        "program"
+      ]
+    },
+    {
+      "id": "guru",
+      "title": "Daftar Guru",
+      "content": "- Dea Ariana Vamtrianto, SE., M.Si. (Kepala Sekolah)\n- Sri Kanla Syafrawati, SS. (Koordinasi BK)\n- Nandar Sunandar, ST. (PKK)\n- Darajat Subagja, S.Kom. (Pd. TKJ)\n- Eucu Supriyadi, SE. (PKK)\n- Agus Gumelar (Pd. TSM)\n- Nurhidayat, S.Pd. (Pd. RPL)\n- Arie Rinaldi, S.Pd. (Pd. LP)\n- Ade Hidayat, ST. (Pd. TKJ / Mp. Pilihan)\n- Sutara, ST. (Pd. TSM)\n- Dian Sudiana, S.Kom (Pd. TKJ)\n- Arief Hardyana, ST (Pd. TO / Mp. Pilihan)\n- Ir. Pepen Kurniawan (Pd. TKR / PKK)\n- Cucu Nursamsu, S.Pd. (PKN)\n- Lilis Nuryati, S.Pd. (B. Inggris)\n- Tety Apriyanti, M.Pd. (IPAS)\n- Agus Purwanto, S.Pd. (IPAS / PKN)\n- Titin Winarti, S.Kom (Pd. RPL / Informatika)\n- Shofi repi utami, S.Pd. (B. Inggris)\n- Rifa Risyandi, S.Pd. (B. Indonesia)\n- Dewi Diah Puspawati, S.Pd. (B. Inggris)\n- Arif Kurniawan, S.Pd. (PKN / Seni Budaya)\n- Riki Suglarto, S.Pd. (B. Sunda / Seni Budaya)\n- Fajar Nugraha, S.Pd. (Olahraga)\n- Putri Indawati, S.Pd (Sejarah)\n- Muhyidin, S.Pd (PAI)\n- Dadan Moch. Ramdani, S.Kom (Pd. TKJ / Informatika)\n- Didik, Febriana, S.Pd (Pd. LP / Seni Budaya / PKK)\n- Mulyana, S.Pd (B. Indonesia)\n- Robbani, ST (Pd. TSM / Mp. Pilihan)\n- Abdul Majid, ST (Pd. TSM)\n- Rifal Asroru Rifal, ST (Pd. TKR)\n- Supriyanto, ST (Pd. TSM)\n- Nyangnyang Supriatna, M.Pd (Matematika)\n- Dhenia Kharisma, S.Pd (IPAS)\n- Selamet, ST (Pd. TSM)\n- Akmal Rahman, S.Pd (Informatika)\n- Lilis Pujianti, S.Pd (B. Indonesia)\n- Intan Mardianti, S.Pd.I (PAI)\n- Tedi Nugraha, S.Pd (Olahraga)\n- Fikri Agung Nugraha, S.Pd (Olahraga)\n- Ali Nurudin, S.Pd.I (PAI)\n- Fajar Mutaqin, S.Pd (B. Indonesia)\n- Defi Indayanti, S.Pd (Matematika)\n- Nunung Nurmaolani, S.Pd (B. Sunda)\n- Sri Mulyani, S.Pd (B. Inggris)\n- Eli Nurhalimah, S.Pd (B. Inggris)\n- Hilmi Fariz, S.Pd (PKN)\n- Desi Purnamasari, S.Pd (B. Sunda)\n- Puput Prihatin, S.Pd (B. Sunda)\n- Ali Rido Gumelar, S.Kom (Pd. TKJ / Mp. Pilihan)\n- Elgi Febriansyah (Pd. TSM)\n- Rofiatu Darajat (Pd. TSM)\n- Dzul Khoer, S.Pd.I (PAI)\n- Iman Sudirman, S.Pd.I (PAI)\n- Muhammad Nur Irfandi, ST (Pd. TKR)\n- Ayu Nurhikmah, S.Pd (Matematika)\n- Prada Febbynuari, S.E (Seni Budaya)\n- Triza Lestya, S.Pd (B. Inggris)\n- Durohman, S.Pd (Matematika)\n- Yayan Sofyan, S.Pd (Matematika)\n- Maman Sukmana, S.Pd (Matematika)\n- Alya Azmi Ardiani, S.Pd (Pd. LP / PKK)\n- Dani Nurfaisal, S.Pd (Pd. LP / Mp. Pilihan / PKK)\n- Hanja Naila Granita Dewi, S.S (B. Inggris)\n- Alan Agustrian, S.Kom (Pd. TKJ / Mp. Pilihan / Informatika)\n- Indra Subrata, ST (Pd. TKR)\n- Ghalib Abdul Khair, S.Pd (Pd. TKR)\n- Cecep P Ramadhan, S.Kom (Pd. TKJ / Mp. Pilihan)\n- Rivaldy Firmansyah, S.Kom (Pd. TKJ / Pd. RPL / Informatika)\n- Hanif Muttin, S.Pd (B. Indonesia)\n- Ahla Irotul Munifah, S.Pd (Sejarah)\n- Khoirun Nisa, S.Pd (IPAS)\n- Izmi Nurfauziah R, S.Pd (Sejarah / PKN)\n- Desi Ruhasih, S.Or (Olahraga)\n- Mohamad Arip Lukman, S.Pd (PKN)\n- Firyai Farihan N, S.E (Pd. LP)\n- Hari Gushendarto, S.T (Pd. TKJ)\n- Ramadhirra Azzahra Putri, S.T (Pd. RPL)\n- Vina Alvina Herawati, S.Kom (Pd. TKJ/RPL)\n- Tedy Septiyadi Irmansyah, ST (Pd. TKR / PKK)\n- Firman Nur Alamsyah, S.Pd (BK / Bahasa Indonesia)",
+      "tags": [
+        "guru",
+        "pengajar",
+        "mapel"
+      ]
+    },
+    {
+      "id": "guru-rpl",
+      "title": "Guru RPL",
+      "content": "- Nurhidayat, S.Pd.\n- Ramadhirra Azzahra Putri, S.T\n- Rivaldy Firmansyah, S.Kom\n- Titin Winarti, S.Kom\n- Vina Alvina Herawati, S.Kom",
+      "tags": [
+        "guru",
+        "jurusan",
+        "rpl"
+      ]
+    },
+    {
+      "id": "guru-tkj",
+      "title": "Guru TKJ",
+      "content": "- Ade Hidayat, ST.\n- Alan Agustrian, S.Kom\n- Ali Rido Gumelar, S.Kom\n- Cecep P Ramadhan, S.Kom\n- Dadan Moch. Ramdani, S.Kom\n- Darajat Subagja, S.Kom.\n- Dian Sudiana, S.Kom\n- Hari Gushendarto, S.T\n- Rivaldy Firmansyah, S.Kom\n- Vina Alvina Herawati, S.Kom",
+      "tags": [
+        "guru",
+        "jurusan",
+        "tkj"
+      ]
+    },
+    {
+      "id": "guru-tkr",
+      "title": "Guru TKR",
+      "content": "- Ghalib Abdul Khair, S.Pd\n- Indra Subrata, ST\n- Ir. Pepen Kurniawan\n- Muhammad Nur Irfandi, ST\n- Rifal Asroru Rifal, ST\n- Tedy Septiyadi Irmansyah, ST",
+      "tags": [
+        "guru",
+        "jurusan",
+        "tkr"
+      ]
+    },
+    {
+      "id": "guru-tsm",
+      "title": "Guru TSM",
+      "content": "- Abdul Majid, ST\n- Agus Gumelar\n- Elgi Febriansyah\n- Robbani, ST\n- Rofiatu Darajat\n- Selamet, ST\n- Supriyanto, ST\n- Sutara, ST.",
+      "tags": [
+        "guru",
+        "jurusan",
+        "tsm"
+      ]
+    },
+    {
+      "id": "guru-to",
+      "title": "Guru TO",
+      "content": "- Arief Hardyana, ST",
+      "tags": [
+        "guru",
+        "jurusan",
+        "to"
+      ]
+    },
+    {
+      "id": "guru-lp",
+      "title": "Guru LP",
+      "content": "- Alya Azmi Ardiani, S.Pd\n- Arie Rinaldi, S.Pd.\n- Dani Nurfaisal, S.Pd\n- Didik, Febriana, S.Pd\n- Firyai Farihan N, S.E",
+      "tags": [
+        "guru",
+        "jurusan",
+        "lp"
+      ]
+    },
+    {
+      "id": "mapel-rpl",
+      "title": "Mapel/Kompetensi RPL",
+      "content": "- Informatika\n- RPL\n- TKJ",
+      "tags": [
+        "mapel",
+        "jurusan",
+        "rpl"
+      ]
+    },
+    {
+      "id": "mapel-tkj",
+      "title": "Mapel/Kompetensi TKJ",
+      "content": "- Informatika\n- Mapel Pilihan\n- RPL\n- TKJ",
+      "tags": [
+        "mapel",
+        "jurusan",
+        "tkj"
+      ]
+    },
+    {
+      "id": "mapel-tkr",
+      "title": "Mapel/Kompetensi TKR",
+      "content": "- PKK\n- TKR",
+      "tags": [
+        "mapel",
+        "jurusan",
+        "tkr"
+      ]
+    },
+    {
+      "id": "mapel-tsm",
+      "title": "Mapel/Kompetensi TSM",
+      "content": "- Mapel Pilihan\n- TSM",
+      "tags": [
+        "mapel",
+        "jurusan",
+        "tsm"
+      ]
+    },
+    {
+      "id": "mapel-to",
+      "title": "Mapel/Kompetensi TO",
+      "content": "- Mapel Pilihan\n- TO",
+      "tags": [
+        "mapel",
+        "jurusan",
+        "to"
+      ]
+    },
+    {
+      "id": "mapel-lp",
+      "title": "Mapel/Kompetensi LP",
+      "content": "- LP\n- Mapel Pilihan\n- PKK\n- Seni Budaya",
+      "tags": [
+        "mapel",
+        "jurusan",
+        "lp"
+      ]
+    },
+    {
+      "id": "guru-kepala-sekolah",
+      "title": "Guru Kepala Sekolah",
+      "content": "- Dea Ariana Vamtrianto, SE., M.Si.",
+      "tags": [
+        "guru",
+        "mapel",
+        "kepala sekolah"
+      ]
+    },
+    {
+      "id": "guru-koordinasi-bk",
+      "title": "Guru Koordinasi BK",
+      "content": "- Sri Kanla Syafrawati, SS.",
+      "tags": [
+        "guru",
+        "mapel",
+        "koordinasi bk"
+      ]
+    },
+    {
+      "id": "guru-pkk",
+      "title": "Guru PKK",
+      "content": "- Alya Azmi Ardiani, S.Pd\n- Dani Nurfaisal, S.Pd\n- Didik, Febriana, S.Pd\n- Eucu Supriyadi, SE.\n- Ir. Pepen Kurniawan\n- Nandar Sunandar, ST.\n- Tedy Septiyadi Irmansyah, ST",
+      "tags": [
+        "guru",
+        "mapel",
+        "pkk"
+      ]
+    },
+    {
+      "id": "guru-tkj",
+      "title": "Guru TKJ",
+      "content": "- Ade Hidayat, ST.\n- Alan Agustrian, S.Kom\n- Ali Rido Gumelar, S.Kom\n- Cecep P Ramadhan, S.Kom\n- Dadan Moch. Ramdani, S.Kom\n- Darajat Subagja, S.Kom.\n- Dian Sudiana, S.Kom\n- Hari Gushendarto, S.T\n- Rivaldy Firmansyah, S.Kom\n- Vina Alvina Herawati, S.Kom",
+      "tags": [
+        "guru",
+        "mapel",
+        "tkj"
+      ]
+    },
+    {
+      "id": "guru-tsm",
+      "title": "Guru TSM",
+      "content": "- Abdul Majid, ST\n- Agus Gumelar\n- Elgi Febriansyah\n- Robbani, ST\n- Rofiatu Darajat\n- Selamet, ST\n- Supriyanto, ST\n- Sutara, ST.",
+      "tags": [
+        "guru",
+        "mapel",
+        "tsm"
+      ]
+    },
+    {
+      "id": "guru-rpl",
+      "title": "Guru RPL",
+      "content": "- Nurhidayat, S.Pd.\n- Ramadhirra Azzahra Putri, S.T\n- Rivaldy Firmansyah, S.Kom\n- Titin Winarti, S.Kom\n- Vina Alvina Herawati, S.Kom",
+      "tags": [
+        "guru",
+        "mapel",
+        "rpl"
+      ]
+    },
+    {
+      "id": "guru-lp",
+      "title": "Guru LP",
+      "content": "- Alya Azmi Ardiani, S.Pd\n- Arie Rinaldi, S.Pd.\n- Dani Nurfaisal, S.Pd\n- Didik, Febriana, S.Pd\n- Firyai Farihan N, S.E",
+      "tags": [
+        "guru",
+        "mapel",
+        "lp"
+      ]
+    },
+    {
+      "id": "guru-mapel-pilihan",
+      "title": "Guru Mapel Pilihan",
+      "content": "- Ade Hidayat, ST.\n- Alan Agustrian, S.Kom\n- Ali Rido Gumelar, S.Kom\n- Arief Hardyana, ST\n- Cecep P Ramadhan, S.Kom\n- Dani Nurfaisal, S.Pd\n- Robbani, ST",
+      "tags": [
+        "guru",
+        "mapel",
+        "mapel pilihan"
+      ]
+    },
+    {
+      "id": "guru-to",
+      "title": "Guru TO",
+      "content": "- Arief Hardyana, ST",
+      "tags": [
+        "guru",
+        "mapel",
+        "to"
+      ]
+    },
+    {
+      "id": "guru-tkr",
+      "title": "Guru TKR",
+      "content": "- Ghalib Abdul Khair, S.Pd\n- Indra Subrata, ST\n- Ir. Pepen Kurniawan\n- Muhammad Nur Irfandi, ST\n- Rifal Asroru Rifal, ST\n- Tedy Septiyadi Irmansyah, ST",
+      "tags": [
+        "guru",
+        "mapel",
+        "tkr"
+      ]
+    },
+    {
+      "id": "guru-pkn",
+      "title": "Guru PKN",
+      "content": "- Agus Purwanto, S.Pd.\n- Arif Kurniawan, S.Pd.\n- Cucu Nursamsu, S.Pd.\n- Hilmi Fariz, S.Pd\n- Izmi Nurfauziah R, S.Pd\n- Mohamad Arip Lukman, S.Pd",
+      "tags": [
+        "guru",
+        "mapel",
+        "pkn"
+      ]
+    },
+    {
+      "id": "guru-bahasa-inggris",
+      "title": "Guru Bahasa Inggris",
+      "content": "- Dewi Diah Puspawati, S.Pd.\n- Eli Nurhalimah, S.Pd\n- Hanja Naila Granita Dewi, S.S\n- Lilis Nuryati, S.Pd.\n- Shofi repi utami, S.Pd.\n- Sri Mulyani, S.Pd\n- Triza Lestya, S.Pd",
+      "tags": [
+        "guru",
+        "mapel",
+        "bahasa inggris"
+      ]
+    },
+    {
+      "id": "guru-ipas",
+      "title": "Guru IPAS",
+      "content": "- Agus Purwanto, S.Pd.\n- Dhenia Kharisma, S.Pd\n- Khoirun Nisa, S.Pd\n- Tety Apriyanti, M.Pd.",
+      "tags": [
+        "guru",
+        "mapel",
+        "ipas"
+      ]
+    },
+    {
+      "id": "guru-informatika",
+      "title": "Guru Informatika",
+      "content": "- Akmal Rahman, S.Pd\n- Alan Agustrian, S.Kom\n- Dadan Moch. Ramdani, S.Kom\n- Rivaldy Firmansyah, S.Kom\n- Titin Winarti, S.Kom",
+      "tags": [
+        "guru",
+        "mapel",
+        "informatika"
+      ]
+    },
+    {
+      "id": "guru-bahasa-indonesia",
+      "title": "Guru Bahasa Indonesia",
+      "content": "- Fajar Mutaqin, S.Pd\n- Firman Nur Alamsyah, S.Pd\n- Hanif Muttin, S.Pd\n- Lilis Pujianti, S.Pd\n- Mulyana, S.Pd\n- Rifa Risyandi, S.Pd.",
+      "tags": [
+        "guru",
+        "mapel",
+        "bahasa indonesia"
+      ]
+    },
+    {
+      "id": "guru-seni-budaya",
+      "title": "Guru Seni Budaya",
+      "content": "- Arif Kurniawan, S.Pd.\n- Didik, Febriana, S.Pd\n- Prada Febbynuari, S.E\n- Riki Suglarto, S.Pd.",
+      "tags": [
+        "guru",
+        "mapel",
+        "seni budaya"
+      ]
+    },
+    {
+      "id": "guru-bahasa-sunda",
+      "title": "Guru Bahasa Sunda",
+      "content": "- Desi Purnamasari, S.Pd\n- Nunung Nurmaolani, S.Pd\n- Puput Prihatin, S.Pd\n- Riki Suglarto, S.Pd.",
+      "tags": [
+        "guru",
+        "mapel",
+        "bahasa sunda"
+      ]
+    },
+    {
+      "id": "guru-olahraga",
+      "title": "Guru Olahraga",
+      "content": "- Desi Ruhasih, S.Or\n- Fajar Nugraha, S.Pd.\n- Fikri Agung Nugraha, S.Pd\n- Tedi Nugraha, S.Pd",
+      "tags": [
+        "guru",
+        "mapel",
+        "olahraga"
+      ]
+    },
+    {
+      "id": "guru-sejarah",
+      "title": "Guru Sejarah",
+      "content": "- Ahla Irotul Munifah, S.Pd\n- Izmi Nurfauziah R, S.Pd\n- Putri Indawati, S.Pd",
+      "tags": [
+        "guru",
+        "mapel",
+        "sejarah"
+      ]
+    },
+    {
+      "id": "guru-pai",
+      "title": "Guru PAI",
+      "content": "- Ali Nurudin, S.Pd.I\n- Dzul Khoer, S.Pd.I\n- Iman Sudirman, S.Pd.I\n- Intan Mardianti, S.Pd.I\n- Muhyidin, S.Pd",
+      "tags": [
+        "guru",
+        "mapel",
+        "pai"
+      ]
+    },
+    {
+      "id": "guru-matematika",
+      "title": "Guru Matematika",
+      "content": "- Ayu Nurhikmah, S.Pd\n- Defi Indayanti, S.Pd\n- Durohman, S.Pd\n- Maman Sukmana, S.Pd\n- Nyangnyang Supriatna, M.Pd\n- Yayan Sofyan, S.Pd",
+      "tags": [
+        "guru",
+        "mapel",
+        "matematika"
+      ]
+    },
+    {
+      "id": "guru-bk",
+      "title": "Guru BK",
+      "content": "- Firman Nur Alamsyah, S.Pd",
+      "tags": [
+        "guru",
+        "mapel",
+        "bk"
+      ]
+    },
+    {
+      "id": "faq-profil",
+      "title": "FAQ Profil Sekolah",
+      "content": "Q: Nama lengkap sekolah apa?\nA: SMK Pertiwi Kuningan\nQ: Alamat SMK Pertiwi Kuningan di mana?\nA: Jl. Siliwangi No.26A, Kasturi, Kec. Cilimus, Kabupaten Kuningan, Jawa Barat 45521\nQ: Siapa kepala sekolah?\nA: Dea Ariana Vamtrianto, SE., M.Si.\nQ: Siapa kepsek SMK Pertiwi Kuningan?\nA: Dea Ariana Vamtrianto, SE., M.Si.",
+      "tags": [
+        "faq",
+        "profil",
+        "kepsek",
+        "alamat"
+      ]
+    },
+    {
+      "id": "faq-sejarah",
+      "title": "FAQ Sejarah",
+      "content": "Q: Ceritakan profil singkat SMK Pertiwi Kuningan.\nA: SMK Pertiwi Kuningan adalah STM pertama di Kabupaten Kuningan (berdiri 1979) di lahan +/-20.000 m2. Sudah meluluskan lebih dari 11.000 alumni yang bekerja di industri/pemerintahan, kuliah di PTN/PTS, atau berwirausaha. Siswa aktif kini 2.345 dengan kurikulum industri dan fasilitas praktik lengkap termasuk kolam renang.\nQ: Sejarah SMK Pertiwi Kuningan?\nA: SMK Pertiwi Kuningan adalah STM pertama di Kabupaten Kuningan (berdiri 1979) di lahan +/-20.000 m2. Sudah meluluskan lebih dari 11.000 alumni yang bekerja di industri/pemerintahan, kuliah di PTN/PTS, atau berwirausaha. Siswa aktif kini 2.345 dengan kurikulum industri dan fasilitas praktik lengkap termasuk kolam renang.",
+      "tags": [
+        "faq",
+        "sejarah"
+      ]
+    },
+    {
+      "id": "faq-visi-misi",
+      "title": "FAQ Visi Misi",
+      "content": "Q: Apa visi sekolah?\nA: Mewujudkan lulusan SMK Pertiwi Kuningan memiliki akhlak mulia, kompeten, berprestasi, dan berjiwa wirausaha.\nQ: Misi sekolah apa saja?\nA: Membentuk lulusan beriman dan bertakwa kepada Tuhan Yang Maha Esa.; Memiliki hardskill dan softskill berstandar industri dan dunia kerja.; Meningkatkan prestasi akademik dan non-akademik.; Menyiapkan tamatan mandiri dan berwirausaha melalui produk kreatif.\nQ: Tujuan sekolah apa saja?\nA: Menjadikan lulusan insan kamil.; Lulusan terserap di dunia usaha/dunia kerja dan hidup layak.; Membentuk lulusan unggul, disiplin, produktif, profesional.; Memberi kompetensi tambahan lewat kegiatan kokurikuler.; Mendorong lulusan membuka peluang usaha di berbagai bidang.",
+      "tags": [
+        "faq",
+        "visi",
+        "misi",
+        "tujuan"
+      ]
+    },
+    {
+      "id": "faq-keunggulan",
+      "title": "FAQ Keunggulan",
+      "content": "Q: Apa keunggulan SMK Pertiwi Kuningan?\nA: Salah satu sekolah terbaik di Jawa Barat; Terakreditasi A \"Sangat Baik\"; Bersertifikat ISO 9001:2015 (Sistem Manajemen Mutu); Fasilitas ruang dan alat praktik standar industri; Kelas Khusus Yamaha Grade A; Axioo Class Program Rujukan Nasional Level A; SMK binaan BNI; SMK binaan Toyota AUTO 2000; Penerapan kurikulum industri; Sekolah dengan program Teaching Factory; BCA Cash Management Academy; Sekolah pencetak wirausaha; Sekolah berbasis digital; Sekolah rujukan nasional; Desain bangunan modern, hijau, dan nyaman; MoU dengan 87 industri mitra siap serap lulusan; Program beasiswa yayasan & prestasi (bebas biaya 3 tahun); SMK Center of Excellence (SMK CoE); SMK Pusat Keunggulan (SMK PK); Memiliki kolam renang sebagai sarana olahraga\nQ: Kelebihan sekolah ini apa?\nA: Salah satu sekolah terbaik di Jawa Barat; Terakreditasi A \"Sangat Baik\"; Bersertifikat ISO 9001:2015 (Sistem Manajemen Mutu); Fasilitas ruang dan alat praktik standar industri; Kelas Khusus Yamaha Grade A; Axioo Class Program Rujukan Nasional Level A; SMK binaan BNI; SMK binaan Toyota AUTO 2000; Penerapan kurikulum industri; Sekolah dengan program Teaching Factory; BCA Cash Management Academy; Sekolah pencetak wirausaha; Sekolah berbasis digital; Sekolah rujukan nasional; Desain bangunan modern, hijau, dan nyaman; MoU dengan 87 industri mitra siap serap lulusan; Program beasiswa yayasan & prestasi (bebas biaya 3 tahun); SMK Center of Excellence (SMK CoE); SMK Pusat Keunggulan (SMK PK); Memiliki kolam renang sebagai sarana olahraga",
+      "tags": [
+        "faq",
+        "keunggulan"
+      ]
+    },
+    {
+      "id": "faq-fakta",
+      "title": "FAQ Fakta Singkat",
+      "content": "Q: Data singkat SMK Pertiwi Kuningan?\nA: Berdiri 1979 (STM pertama di Kuningan); Luas lahan +/-20.000 m2; Alumni > 11.000; Siswa aktif 2.345; Kolam renang & fasilitas olahraga\nQ: Fakta singkat tentang sekolah?\nA: Berdiri 1979 (STM pertama di Kuningan); Luas lahan +/-20.000 m2; Alumni > 11.000; Siswa aktif 2.345; Kolam renang & fasilitas olahraga",
+      "tags": [
+        "faq",
+        "fakta"
+      ]
+    },
+    {
+      "id": "faq-jadwal",
+      "title": "FAQ Jadwal",
+      "content": "Q: Jadwal pelajaran SMK Pertiwi Kuningan?\nA: 07.00 - 07.40; 07.40 - 08.20; 08.20 - 09.00; 09.00 - 09.40; 09.40 - 10.20; 10.20 - 10.40 (Istirahat); 10.40 - 11.20; 11.20 - 12.00; 12.00 - 12.40; 12.40 - 13.00 (Istirahat); 13.00 - 13.40; 13.40 - 14.20; 14.20 - 15.00\nQ: Jam pelajaran mulai jam berapa?\nA: 07.00 - 07.40",
+      "tags": [
+        "faq",
+        "jadwal"
+      ]
+    },
+    {
+      "id": "faq-jurusan",
+      "title": "FAQ Jurusan",
+      "content": "Q: Jurusan apa saja di SMK Pertiwi Kuningan?\nA: Rekayasa Perangkat Lunak (RPL); Teknik Komputer dan Jaringan (TKJ); Teknik Kendaraan Ringan (TKR); Teknik Sepeda Motor (TSM); Ototronik (TO); Layanan Perbankan (LP); Bisnis Daring dan Pemasaran (BDP)\nQ: RPL fokus di bidang apa?\nA: Fokus pada software engineering, arsitektur aplikasi web/mobile, DevOps dasar, UI/UX, dan kolaborasi agile. Siswa dibiasakan dengan project-based learning dan portofolio produk digital.\nQ: Mapel RPL apa saja?\nA: Data mapel per jurusan diambil dari daftar guru.\nQ: Rekayasa Perangkat Lunak belajar apa?\nA: Fokus pada software engineering, arsitektur aplikasi web/mobile, DevOps dasar, UI/UX, dan kolaborasi agile. Siswa dibiasakan dengan project-based learning dan portofolio produk digital.\nQ: TKJ fokus di bidang apa?\nA: Mendalami desain dan implementasi jaringan kabel/ nirkabel, virtualisasi server, keamanan jaringan dasar, serta monitoring infrastruktur. Ada praktik konfigurasi perangkat Cisco/MikroTik.\nQ: Mapel TKJ apa saja?\nA: Data mapel per jurusan diambil dari daftar guru.\nQ: Teknik Komputer dan Jaringan belajar apa?\nA: Mendalami desain dan implementasi jaringan kabel/ nirkabel, virtualisasi server, keamanan jaringan dasar, serta monitoring infrastruktur. Ada praktik konfigurasi perangkat Cisco/MikroTik.\nQ: TKR fokus di bidang apa?\nA: Pembelajaran diagnosa dan perawatan kendaraan bensin/EV ringan, sistem EFI, transmisi otomatis, hingga pemakaian scan tool modern untuk troubleshooting.\nQ: Mapel TKR apa saja?\nA: Data mapel per jurusan diambil dari daftar guru.\nQ: Teknik Kendaraan Ringan belajar apa?\nA: Pembelajaran diagnosa dan perawatan kendaraan bensin/EV ringan, sistem EFI, transmisi otomatis, hingga pemakaian scan tool modern untuk troubleshooting.\nQ: TSM fokus di bidang apa?\nA: Praktik tune-up, overhaul, sistem injeksi, kelistrikan, dan perawatan motor harian/kompetisi. Termasuk pemahaman keselamatan kerja dan layanan pelanggan.\nQ: Mapel TSM apa saja?\nA: Data mapel per jurusan diambil dari daftar guru.\nQ: Teknik Sepeda Motor belajar apa?\nA: Praktik tune-up, overhaul, sistem injeksi, kelistrikan, dan perawatan motor harian/kompetisi. Termasuk pemahaman keselamatan kerja dan layanan pelanggan.\nQ: TO fokus di bidang apa?\nA: Fokus pada elektronik otomotif modern: sensor/actuator, ECU, CAN bus, sistem keselamatan aktif, dan integrasi smart car. Banyak praktik menggunakan simulator dan alat ukur.\nQ: Mapel TO apa saja?\nA: Data mapel per jurusan diambil dari daftar guru.\nQ: Ototronik belajar apa?\nA: Fokus pada elektronik otomotif modern: sensor/actuator, ECU, CAN bus, sistem keselamatan aktif, dan integrasi smart car. Banyak praktik menggunakan simulator dan alat ukur.\nQ: LP fokus di bidang apa?\nA: Materi pelayanan nasabah, produk perbankan, akuntansi dasar, manajemen kas, serta fintech & digital banking. Menekankan etika layanan dan keamanan data.\nQ: Mapel LP apa saja?\nA: Data mapel per jurusan diambil dari daftar guru.\nQ: Layanan Perbankan belajar apa?\nA: Materi pelayanan nasabah, produk perbankan, akuntansi dasar, manajemen kas, serta fintech & digital banking. Menekankan etika layanan dan keamanan data.\nQ: BDP fokus di bidang apa?\nA: Strategi digital marketing, copywriting, konten sosial media, marketplace, analitik, dan campaign performance. Ada praktik membuat brand kit dan toko daring end-to-end.\nQ: Mapel BDP apa saja?\nA: Data mapel per jurusan diambil dari daftar guru.\nQ: Bisnis Daring dan Pemasaran belajar apa?\nA: Strategi digital marketing, copywriting, konten sosial media, marketplace, analitik, dan campaign performance. Ada praktik membuat brand kit dan toko daring end-to-end.",
+      "tags": [
+        "faq",
+        "jurusan"
+      ]
+    },
+    {
+      "id": "faq-guru",
+      "title": "FAQ Guru dan Mapel",
+      "content": "Q: Siapa saja guru di SMK Pertiwi Kuningan?\nA: Dea Ariana Vamtrianto, SE., M.Si. (Kepala Sekolah); Sri Kanla Syafrawati, SS. (Koordinasi BK); Nandar Sunandar, ST. (PKK); Darajat Subagja, S.Kom. (Pd. TKJ); Eucu Supriyadi, SE. (PKK); Agus Gumelar (Pd. TSM); Nurhidayat, S.Pd. (Pd. RPL); Arie Rinaldi, S.Pd. (Pd. LP); Ade Hidayat, ST. (Pd. TKJ / Mp. Pilihan); Sutara, ST. (Pd. TSM); Dian Sudiana, S.Kom (Pd. TKJ); Arief Hardyana, ST (Pd. TO / Mp. Pilihan); Ir. Pepen Kurniawan (Pd. TKR / PKK); Cucu Nursamsu, S.Pd. (PKN); Lilis Nuryati, S.Pd. (B. Inggris); Tety Apriyanti, M.Pd. (IPAS); Agus Purwanto, S.Pd. (IPAS / PKN); Titin Winarti, S.Kom (Pd. RPL / Informatika); Shofi repi utami, S.Pd. (B. Inggris); Rifa Risyandi, S.Pd. (B. Indonesia); Dewi Diah Puspawati, S.Pd. (B. Inggris); Arif Kurniawan, S.Pd. (PKN / Seni Budaya); Riki Suglarto, S.Pd. (B. Sunda / Seni Budaya); Fajar Nugraha, S.Pd. (Olahraga); Putri Indawati, S.Pd (Sejarah); Muhyidin, S.Pd (PAI); Dadan Moch. Ramdani, S.Kom (Pd. TKJ / Informatika); Didik, Febriana, S.Pd (Pd. LP / Seni Budaya / PKK); Mulyana, S.Pd (B. Indonesia); Robbani, ST (Pd. TSM / Mp. Pilihan); Abdul Majid, ST (Pd. TSM); Rifal Asroru Rifal, ST (Pd. TKR); Supriyanto, ST (Pd. TSM); Nyangnyang Supriatna, M.Pd (Matematika); Dhenia Kharisma, S.Pd (IPAS); Selamet, ST (Pd. TSM); Akmal Rahman, S.Pd (Informatika); Lilis Pujianti, S.Pd (B. Indonesia); Intan Mardianti, S.Pd.I (PAI); Tedi Nugraha, S.Pd (Olahraga); Fikri Agung Nugraha, S.Pd (Olahraga); Ali Nurudin, S.Pd.I (PAI); Fajar Mutaqin, S.Pd (B. Indonesia); Defi Indayanti, S.Pd (Matematika); Nunung Nurmaolani, S.Pd (B. Sunda); Sri Mulyani, S.Pd (B. Inggris); Eli Nurhalimah, S.Pd (B. Inggris); Hilmi Fariz, S.Pd (PKN); Desi Purnamasari, S.Pd (B. Sunda); Puput Prihatin, S.Pd (B. Sunda); Ali Rido Gumelar, S.Kom (Pd. TKJ / Mp. Pilihan); Elgi Febriansyah (Pd. TSM); Rofiatu Darajat (Pd. TSM); Dzul Khoer, S.Pd.I (PAI); Iman Sudirman, S.Pd.I (PAI); Muhammad Nur Irfandi, ST (Pd. TKR); Ayu Nurhikmah, S.Pd (Matematika); Prada Febbynuari, S.E (Seni Budaya); Triza Lestya, S.Pd (B. Inggris); Durohman, S.Pd (Matematika); Yayan Sofyan, S.Pd (Matematika); Maman Sukmana, S.Pd (Matematika); Alya Azmi Ardiani, S.Pd (Pd. LP / PKK); Dani Nurfaisal, S.Pd (Pd. LP / Mp. Pilihan / PKK); Hanja Naila Granita Dewi, S.S (B. Inggris); Alan Agustrian, S.Kom (Pd. TKJ / Mp. Pilihan / Informatika); Indra Subrata, ST (Pd. TKR); Ghalib Abdul Khair, S.Pd (Pd. TKR); Cecep P Ramadhan, S.Kom (Pd. TKJ / Mp. Pilihan); Rivaldy Firmansyah, S.Kom (Pd. TKJ / Pd. RPL / Informatika); Hanif Muttin, S.Pd (B. Indonesia); Ahla Irotul Munifah, S.Pd (Sejarah); Khoirun Nisa, S.Pd (IPAS); Izmi Nurfauziah R, S.Pd (Sejarah / PKN); Desi Ruhasih, S.Or (Olahraga); Mohamad Arip Lukman, S.Pd (PKN); Firyai Farihan N, S.E (Pd. LP); Hari Gushendarto, S.T (Pd. TKJ); Ramadhirra Azzahra Putri, S.T (Pd. RPL); Vina Alvina Herawati, S.Kom (Pd. TKJ/RPL); Tedy Septiyadi Irmansyah, ST (Pd. TKR / PKK); Firman Nur Alamsyah, S.Pd (BK / Bahasa Indonesia)\nQ: Siapa guru RPL?\nA: Nurhidayat, S.Pd.; Ramadhirra Azzahra Putri, S.T; Rivaldy Firmansyah, S.Kom; Titin Winarti, S.Kom; Vina Alvina Herawati, S.Kom\nQ: Mapel RPL apa saja?\nA: Informatika; RPL; TKJ\nQ: Siapa guru TKJ?\nA: Ade Hidayat, ST.; Alan Agustrian, S.Kom; Ali Rido Gumelar, S.Kom; Cecep P Ramadhan, S.Kom; Dadan Moch. Ramdani, S.Kom; Darajat Subagja, S.Kom.; Dian Sudiana, S.Kom; Hari Gushendarto, S.T; Rivaldy Firmansyah, S.Kom; Vina Alvina Herawati, S.Kom\nQ: Mapel TKJ apa saja?\nA: Informatika; Mapel Pilihan; RPL; TKJ\nQ: Siapa guru TKR?\nA: Ghalib Abdul Khair, S.Pd; Indra Subrata, ST; Ir. Pepen Kurniawan; Muhammad Nur Irfandi, ST; Rifal Asroru Rifal, ST; Tedy Septiyadi Irmansyah, ST\nQ: Mapel TKR apa saja?\nA: PKK; TKR\nQ: Siapa guru TSM?\nA: Abdul Majid, ST; Agus Gumelar; Elgi Febriansyah; Robbani, ST; Rofiatu Darajat; Selamet, ST; Supriyanto, ST; Sutara, ST.\nQ: Mapel TSM apa saja?\nA: Mapel Pilihan; TSM\nQ: Siapa guru TO?\nA: Arief Hardyana, ST\nQ: Mapel TO apa saja?\nA: Mapel Pilihan; TO\nQ: Siapa guru LP?\nA: Alya Azmi Ardiani, S.Pd; Arie Rinaldi, S.Pd.; Dani Nurfaisal, S.Pd; Didik, Febriana, S.Pd; Firyai Farihan N, S.E\nQ: Mapel LP apa saja?\nA: LP; Mapel Pilihan; PKK; Seni Budaya\nQ: Guru BK siapa?\nA: Firman Nur Alamsyah, S.Pd; Sri Kanla Syafrawati, SS.\nQ: Guru Bahasa Indonesia siapa?\nA: Firman Nur Alamsyah, S.Pd\nQ: Guru IPAS siapa?\nA: Agus Purwanto, S.Pd.; Dhenia Kharisma, S.Pd; Khoirun Nisa, S.Pd; Tety Apriyanti, M.Pd.\nQ: Guru Informatika siapa?\nA: Akmal Rahman, S.Pd; Alan Agustrian, S.Kom; Dadan Moch. Ramdani, S.Kom; Rivaldy Firmansyah, S.Kom; Titin Winarti, S.Kom\nQ: Guru Kepala Sekolah siapa?\nA: Dea Ariana Vamtrianto, SE., M.Si.\nQ: Guru Koordinasi BK siapa?\nA: Sri Kanla Syafrawati, SS.\nQ: Guru LP siapa?\nA: Alya Azmi Ardiani, S.Pd; Arie Rinaldi, S.Pd.; Dani Nurfaisal, S.Pd; Didik, Febriana, S.Pd; Firyai Farihan N, S.E\nQ: Guru Matematika siapa?\nA: Ayu Nurhikmah, S.Pd; Defi Indayanti, S.Pd; Durohman, S.Pd; Maman Sukmana, S.Pd; Nyangnyang Supriatna, M.Pd; Yayan Sofyan, S.Pd\nQ: Guru Olahraga siapa?\nA: Desi Ruhasih, S.Or; Fajar Nugraha, S.Pd.; Fikri Agung Nugraha, S.Pd; Tedi Nugraha, S.Pd\nQ: Guru PAI siapa?\nA: Ali Nurudin, S.Pd.I; Dzul Khoer, S.Pd.I; Iman Sudirman, S.Pd.I; Intan Mardianti, S.Pd.I; Muhyidin, S.Pd\nQ: Guru PKK siapa?\nA: Alya Azmi Ardiani, S.Pd; Dani Nurfaisal, S.Pd; Didik, Febriana, S.Pd; Eucu Supriyadi, SE.; Ir. Pepen Kurniawan; Nandar Sunandar, ST.; Tedy Septiyadi Irmansyah, ST\nQ: Guru PKN siapa?\nA: Agus Purwanto, S.Pd.; Arif Kurniawan, S.Pd.; Cucu Nursamsu, S.Pd.; Hilmi Fariz, S.Pd; Izmi Nurfauziah R, S.Pd; Mohamad Arip Lukman, S.Pd\nQ: Guru RPL siapa?\nA: Nurhidayat, S.Pd.; Ramadhirra Azzahra Putri, S.T; Rivaldy Firmansyah, S.Kom; Titin Winarti, S.Kom; Vina Alvina Herawati, S.Kom\nQ: Guru Sejarah siapa?\nA: Ahla Irotul Munifah, S.Pd; Izmi Nurfauziah R, S.Pd; Putri Indawati, S.Pd\nQ: Guru Seni Budaya siapa?\nA: Arif Kurniawan, S.Pd.; Didik, Febriana, S.Pd; Prada Febbynuari, S.E; Riki Suglarto, S.Pd.\nQ: Guru TKJ siapa?\nA: Ade Hidayat, ST.; Alan Agustrian, S.Kom; Ali Rido Gumelar, S.Kom; Cecep P Ramadhan, S.Kom; Dadan Moch. Ramdani, S.Kom; Darajat Subagja, S.Kom.; Dian Sudiana, S.Kom; Hari Gushendarto, S.T; Rivaldy Firmansyah, S.Kom; Vina Alvina Herawati, S.Kom\nQ: Guru TKR siapa?\nA: Ghalib Abdul Khair, S.Pd; Indra Subrata, ST; Ir. Pepen Kurniawan; Muhammad Nur Irfandi, ST; Rifal Asroru Rifal, ST; Tedy Septiyadi Irmansyah, ST\nQ: Guru TO siapa?\nA: Arief Hardyana, ST\nQ: Guru TSM siapa?\nA: Abdul Majid, ST; Agus Gumelar; Elgi Febriansyah; Robbani, ST; Rofiatu Darajat; Selamet, ST; Supriyanto, ST; Sutara, ST.",
+      "tags": [
+        "faq",
+        "guru",
+        "mapel"
+      ]
+    }
+  ]
+}

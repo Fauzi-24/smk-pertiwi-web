@@ -1,0 +1,291 @@
+# Kemungkinan Pertanyaan untuk PRISM
+
+## Profil Sekolah
+- Nama lengkap SMK Pertiwi Kuningan apa?
+- Alamat SMK Pertiwi Kuningan di mana?
+- Letak SMK Pertiwi Kuningan di mana?
+- Siapa kepala sekolah SMK Pertiwi Kuningan?
+- Siapa kepsek SMK Pertiwi Kuningan?
+- Profil singkat SMK Pertiwi Kuningan?
+- Info singkat tentang SMK Pertiwi Kuningan?
+- Sekolah SMK Pertiwi Kuningan berada di mana?
+
+## Visi Misi Tujuan
+- Apa visi sekolah?
+- Apa misi sekolah?
+- Tujuan sekolah apa saja?
+- Visi dan misi SMK Pertiwi Kuningan?
+
+## Keunggulan
+- Apa keunggulan SMK Pertiwi Kuningan?
+- Kelebihan sekolah ini apa?
+- Program unggulan sekolah?
+- Keunggulan fasilitas sekolah apa saja?
+
+## Fakta Singkat
+- Data singkat SMK Pertiwi Kuningan?
+- Fakta singkat tentang sekolah?
+- SMK Pertiwi Kuningan berdiri tahun berapa?
+- Jumlah siswa aktif berapa?
+- Jumlah alumni berapa?
+
+## Jadwal
+- Jadwal pelajaran SMK Pertiwi Kuningan?
+- Jam pelajaran mulai jam berapa?
+- Jam istirahat sekolah kapan?
+- Jam masuk sekolah berapa?
+
+## Jurusan
+- Jurusan apa saja di SMK Pertiwi Kuningan?
+- Daftar jurusan SMK Pertiwi Kuningan?
+- Kompetensi keahlian apa saja?
+- Program keahlian apa saja?
+- Siapa saja guru RPL?
+- Daftar guru RPL?
+- Guru jurusan RPL siapa?
+- Siapa pengajar RPL?
+- Siapa yang mengajar RPL?
+- Mapel RPL apa saja?
+- Pelajaran RPL apa saja?
+- Mata pelajaran RPL apa?
+- Kompetensi RPL apa saja?
+- RPL fokus di bidang apa?
+- RPL belajar apa saja?
+- Jurusan RPL belajar apa?
+- Fokus jurusan RPL apa?
+- Bidang keahlian RPL apa?
+- Siapa saja guru Rekayasa Perangkat Lunak?
+- Daftar guru Rekayasa Perangkat Lunak?
+- Guru jurusan Rekayasa Perangkat Lunak siapa?
+- Siapa pengajar Rekayasa Perangkat Lunak?
+- Siapa yang mengajar Rekayasa Perangkat Lunak?
+- Mapel Rekayasa Perangkat Lunak apa saja?
+- Pelajaran Rekayasa Perangkat Lunak apa saja?
+- Mata pelajaran Rekayasa Perangkat Lunak apa?
+- Kompetensi Rekayasa Perangkat Lunak apa saja?
+- Rekayasa Perangkat Lunak fokus di bidang apa?
+- Rekayasa Perangkat Lunak belajar apa saja?
+- Jurusan Rekayasa Perangkat Lunak belajar apa?
+- Fokus jurusan Rekayasa Perangkat Lunak apa?
+- Bidang keahlian Rekayasa Perangkat Lunak apa?
+- Siapa saja guru TKJ?
+- Daftar guru TKJ?
+- Guru jurusan TKJ siapa?
+- Siapa pengajar TKJ?
+- Siapa yang mengajar TKJ?
+- Mapel TKJ apa saja?
+- Pelajaran TKJ apa saja?
+- Mata pelajaran TKJ apa?
+- Kompetensi TKJ apa saja?
+- TKJ fokus di bidang apa?
+- TKJ belajar apa saja?
+- Jurusan TKJ belajar apa?
+- Fokus jurusan TKJ apa?
+- Bidang keahlian TKJ apa?
+- Siapa saja guru Teknik Komputer dan Jaringan?
+- Daftar guru Teknik Komputer dan Jaringan?
+- Guru jurusan Teknik Komputer dan Jaringan siapa?
+- Siapa pengajar Teknik Komputer dan Jaringan?
+- Siapa yang mengajar Teknik Komputer dan Jaringan?
+- Mapel Teknik Komputer dan Jaringan apa saja?
+- Pelajaran Teknik Komputer dan Jaringan apa saja?
+- Mata pelajaran Teknik Komputer dan Jaringan apa?
+- Kompetensi Teknik Komputer dan Jaringan apa saja?
+- Teknik Komputer dan Jaringan fokus di bidang apa?
+- Teknik Komputer dan Jaringan belajar apa saja?
+- Jurusan Teknik Komputer dan Jaringan belajar apa?
+- Fokus jurusan Teknik Komputer dan Jaringan apa?
+- Bidang keahlian Teknik Komputer dan Jaringan apa?
+- Siapa saja guru TKR?
+- Daftar guru TKR?
+- Guru jurusan TKR siapa?
+- Siapa pengajar TKR?
+- Siapa yang mengajar TKR?
+- Mapel TKR apa saja?
+- Pelajaran TKR apa saja?
+- Mata pelajaran TKR apa?
+- Kompetensi TKR apa saja?
+- TKR fokus di bidang apa?
+- TKR belajar apa saja?
+- Jurusan TKR belajar apa?
+- Fokus jurusan TKR apa?
+- Bidang keahlian TKR apa?
+- Siapa saja guru Teknik Kendaraan Ringan?
+- Daftar guru Teknik Kendaraan Ringan?
+- Guru jurusan Teknik Kendaraan Ringan siapa?
+- Siapa pengajar Teknik Kendaraan Ringan?
+- Siapa yang mengajar Teknik Kendaraan Ringan?
+- Mapel Teknik Kendaraan Ringan apa saja?
+- Pelajaran Teknik Kendaraan Ringan apa saja?
+- Mata pelajaran Teknik Kendaraan Ringan apa?
+- Kompetensi Teknik Kendaraan Ringan apa saja?
+- Teknik Kendaraan Ringan fokus di bidang apa?
+- Teknik Kendaraan Ringan belajar apa saja?
+- Jurusan Teknik Kendaraan Ringan belajar apa?
+- Fokus jurusan Teknik Kendaraan Ringan apa?
+- Bidang keahlian Teknik Kendaraan Ringan apa?
+- Siapa saja guru TSM?
+- Daftar guru TSM?
+- Guru jurusan TSM siapa?
+- Siapa pengajar TSM?
+- Siapa yang mengajar TSM?
+- Mapel TSM apa saja?
+- Pelajaran TSM apa saja?
+- Mata pelajaran TSM apa?
+- Kompetensi TSM apa saja?
+- TSM fokus di bidang apa?
+- TSM belajar apa saja?
+- Jurusan TSM belajar apa?
+- Fokus jurusan TSM apa?
+- Bidang keahlian TSM apa?
+- Siapa saja guru Teknik Sepeda Motor?
+- Daftar guru Teknik Sepeda Motor?
+- Guru jurusan Teknik Sepeda Motor siapa?
+- Siapa pengajar Teknik Sepeda Motor?
+- Siapa yang mengajar Teknik Sepeda Motor?
+- Mapel Teknik Sepeda Motor apa saja?
+- Pelajaran Teknik Sepeda Motor apa saja?
+- Mata pelajaran Teknik Sepeda Motor apa?
+- Kompetensi Teknik Sepeda Motor apa saja?
+- Teknik Sepeda Motor fokus di bidang apa?
+- Teknik Sepeda Motor belajar apa saja?
+- Jurusan Teknik Sepeda Motor belajar apa?
+- Fokus jurusan Teknik Sepeda Motor apa?
+- Bidang keahlian Teknik Sepeda Motor apa?
+- Siapa saja guru TO?
+- Daftar guru TO?
+- Guru jurusan TO siapa?
+- Siapa pengajar TO?
+- Siapa yang mengajar TO?
+- Mapel TO apa saja?
+- Pelajaran TO apa saja?
+- Mata pelajaran TO apa?
+- Kompetensi TO apa saja?
+- TO fokus di bidang apa?
+- TO belajar apa saja?
+- Jurusan TO belajar apa?
+- Fokus jurusan TO apa?
+- Bidang keahlian TO apa?
+- Siapa saja guru Ototronik?
+- Daftar guru Ototronik?
+- Guru jurusan Ototronik siapa?
+- Siapa pengajar Ototronik?
+- Siapa yang mengajar Ototronik?
+- Mapel Ototronik apa saja?
+- Pelajaran Ototronik apa saja?
+- Mata pelajaran Ototronik apa?
+- Kompetensi Ototronik apa saja?
+- Ototronik fokus di bidang apa?
+- Ototronik belajar apa saja?
+- Jurusan Ototronik belajar apa?
+- Fokus jurusan Ototronik apa?
+- Bidang keahlian Ototronik apa?
+- Siapa saja guru LP?
+- Daftar guru LP?
+- Guru jurusan LP siapa?
+- Siapa pengajar LP?
+- Siapa yang mengajar LP?
+- Mapel LP apa saja?
+- Pelajaran LP apa saja?
+- Mata pelajaran LP apa?
+- Kompetensi LP apa saja?
+- LP fokus di bidang apa?
+- LP belajar apa saja?
+- Jurusan LP belajar apa?
+- Fokus jurusan LP apa?
+- Bidang keahlian LP apa?
+- Siapa saja guru Layanan Perbankan?
+- Daftar guru Layanan Perbankan?
+- Guru jurusan Layanan Perbankan siapa?
+- Siapa pengajar Layanan Perbankan?
+- Siapa yang mengajar Layanan Perbankan?
+- Mapel Layanan Perbankan apa saja?
+- Pelajaran Layanan Perbankan apa saja?
+- Mata pelajaran Layanan Perbankan apa?
+- Kompetensi Layanan Perbankan apa saja?
+- Layanan Perbankan fokus di bidang apa?
+- Layanan Perbankan belajar apa saja?
+- Jurusan Layanan Perbankan belajar apa?
+- Fokus jurusan Layanan Perbankan apa?
+- Bidang keahlian Layanan Perbankan apa?
+- Siapa saja guru BDP?
+- Daftar guru BDP?
+- Guru jurusan BDP siapa?
+- Siapa pengajar BDP?
+- Siapa yang mengajar BDP?
+- Mapel BDP apa saja?
+- Pelajaran BDP apa saja?
+- Mata pelajaran BDP apa?
+- Kompetensi BDP apa saja?
+- BDP fokus di bidang apa?
+- BDP belajar apa saja?
+- Jurusan BDP belajar apa?
+- Fokus jurusan BDP apa?
+- Bidang keahlian BDP apa?
+- Siapa saja guru Bisnis Daring dan Pemasaran?
+- Daftar guru Bisnis Daring dan Pemasaran?
+- Guru jurusan Bisnis Daring dan Pemasaran siapa?
+- Siapa pengajar Bisnis Daring dan Pemasaran?
+- Siapa yang mengajar Bisnis Daring dan Pemasaran?
+- Mapel Bisnis Daring dan Pemasaran apa saja?
+- Pelajaran Bisnis Daring dan Pemasaran apa saja?
+- Mata pelajaran Bisnis Daring dan Pemasaran apa?
+- Kompetensi Bisnis Daring dan Pemasaran apa saja?
+- Bisnis Daring dan Pemasaran fokus di bidang apa?
+- Bisnis Daring dan Pemasaran belajar apa saja?
+- Jurusan Bisnis Daring dan Pemasaran belajar apa?
+- Fokus jurusan Bisnis Daring dan Pemasaran apa?
+- Bidang keahlian Bisnis Daring dan Pemasaran apa?
+
+## Guru dan Mapel
+- Siapa saja guru di SMK Pertiwi Kuningan?
+- Daftar guru SMK Pertiwi Kuningan?
+- Guru mapel Bahasa Indonesia siapa?
+- Guru mapel Bahasa Inggris siapa?
+- Guru mapel Matematika siapa?
+- Guru PAI siapa?
+- Guru IPAS siapa?
+- Siapa guru BK?
+- Siapa guru PKK?
+- Guru Bahasa Indonesia siapa?
+- Siapa guru Bahasa Indonesia?
+- Guru Bahasa Inggris siapa?
+- Siapa guru Bahasa Inggris?
+- Guru Bahasa Sunda siapa?
+- Siapa guru Bahasa Sunda?
+- Guru mapel Bahasa Sunda siapa?
+- Guru Matematika siapa?
+- Siapa guru Matematika?
+- Siapa guru IPAS?
+- Guru mapel IPAS siapa?
+- Guru PKN siapa?
+- Siapa guru PKN?
+- Guru mapel PKN siapa?
+- Guru Sejarah siapa?
+- Siapa guru Sejarah?
+- Guru mapel Sejarah siapa?
+- Siapa guru PAI?
+- Guru mapel PAI siapa?
+- Guru Olahraga siapa?
+- Siapa guru Olahraga?
+- Guru mapel Olahraga siapa?
+- Guru Seni Budaya siapa?
+- Siapa guru Seni Budaya?
+- Guru mapel Seni Budaya siapa?
+- Guru Informatika siapa?
+- Siapa guru Informatika?
+- Guru mapel Informatika siapa?
+- Guru BK siapa?
+- Guru mapel BK siapa?
+- Guru PKK siapa?
+- Guru mapel PKK siapa?
+- Guru Mapel Pilihan siapa?
+- Siapa guru Mapel Pilihan?
+- Guru mapel Mapel Pilihan siapa?
+- Guru wali kelas ada siapa saja?
+
+## Jumlah
+- Jumlah guru berapa?
+- Berapa total guru?
+- Jumlah jurusan ada berapa?
+- Total jurusan ada berapa?
