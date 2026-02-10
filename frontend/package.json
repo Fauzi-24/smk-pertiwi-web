@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Frontend Chatbot SMK Pertiwi Kuningan",
   "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "vite",
+    "prebuild": "node -e \"try{require('fs').chmodSync('node_modules/.bin/vite', 0o755)}catch(e){}\"",
     "build": "vite build",
     "preview": "vite preview"
   },
