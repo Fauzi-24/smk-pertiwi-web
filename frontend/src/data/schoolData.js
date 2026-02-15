@@ -53,7 +53,15 @@ const schoolData = {
       nama: 'Rekayasa Perangkat Lunak',
       icon: 'fas fa-laptop-code',
       deskripsi: 'Fokus pada software engineering, arsitektur aplikasi web/mobile, DevOps dasar, UI/UX, dan kolaborasi agile. Siswa dibiasakan dengan project-based learning dan portofolio produk digital.',
-      accent: '#2563EB'
+      accent: '#2563EB',
+      subjects: [
+        'Pemrograman Web & Mobile (HTML, CSS, JS, Vue/React, Flutter)',
+        'Basis Data (MySQL, Firebase, MongoDB)',
+        'Desain UI/UX (Figma, Adobe XD)',
+        'Backend Development (Node.js, PHP/Laravel, Python)',
+        'Version Control System (Git & GitHub)',
+        'Cloud Computing Dasar & DevOps'
+      ]
     },
     {
       id: 2,
@@ -61,7 +69,15 @@ const schoolData = {
       nama: 'Teknik Komputer dan Jaringan',
       icon: 'fas fa-network-wired',
       deskripsi: 'Mendalami desain dan implementasi jaringan kabel/ nirkabel, virtualisasi server, keamanan jaringan dasar, serta monitoring infrastruktur. Ada praktik konfigurasi perangkat Cisco/MikroTik.',
-      accent: '#0EA5E9'
+      accent: '#0EA5E9',
+      subjects: [
+        'Administrasi Infrastruktur Jaringan (Cisco, MikroTik)',
+        'Administrasi Sistem Jaringan (Linux Server, Windows Server)',
+        'Teknologi Layanan Jaringan (VoIP, Fiber Optic)',
+        'Keamanan Jaringan & Cyber Security Dasar',
+        'Cloud Computing & Virtualization',
+        'Internet of Things (IoT) Dasar'
+      ]
     },
     {
       id: 3,
@@ -69,7 +85,15 @@ const schoolData = {
       nama: 'Teknik Kendaraan Ringan',
       icon: 'fas fa-car',
       deskripsi: 'Pembelajaran diagnosa dan perawatan kendaraan bensin/EV ringan, sistem EFI, transmisi otomatis, hingga pemakaian scan tool modern untuk troubleshooting.',
-      accent: '#F59E0B'
+      accent: '#F59E0B',
+      subjects: [
+        'Pemeliharaan Mesin Kendaraan Ringan (Bensin & Diesel)',
+        'Pemeliharaan Sasis & Pemindah Tenaga',
+        'Kelistrikan Kendaraan Ringan & AC Mobil',
+        'Sistem Injeksi Elektronik (EFI)',
+        'Diagnosa Kerusakan (Scan Tool)',
+        'Pengenalan Kendaraan Listrik (EV)'
+      ]
     },
     {
       id: 4,
@@ -77,7 +101,15 @@ const schoolData = {
       nama: 'Teknik Sepeda Motor',
       icon: 'fas fa-motorcycle',
       deskripsi: 'Praktik tune-up, overhaul, sistem injeksi, kelistrikan, dan perawatan motor harian/kompetisi. Termasuk pemahaman keselamatan kerja dan layanan pelanggan.',
-      accent: '#10B981'
+      accent: '#10B981',
+      subjects: [
+        'Pemeliharaan Mesin Sepeda Motor',
+        'Pemeliharaan Sasis & Suspensi',
+        'Kelistrikan Sepeda Motor',
+        'Sistem Injeksi Bahan Bakar (FI)',
+        'Pengelolaan Bengkel Sepeda Motor',
+        'Modifikasi Ringan & Tune-up'
+      ]
     },
     {
       id: 5,
@@ -85,7 +117,15 @@ const schoolData = {
       nama: 'Ototronik',
       icon: 'fas fa-microchip',
       deskripsi: 'Fokus pada elektronik otomotif modern: sensor/actuator, ECU, CAN bus, sistem keselamatan aktif, dan integrasi smart car. Banyak praktik menggunakan simulator dan alat ukur.',
-      accent: '#22D3EE'
+      accent: '#22D3EE',
+      subjects: [
+        'Sistem Kontrol Elektronik Otomotif',
+        'Sensor & Aktuator Kendaraan',
+        'Engine Management System',
+        'Sistem Keamanan & Kenyamanan Elektronik (ABS, Airbag)',
+        'Diagnosa Sistem Elektronik',
+        'Mikrokontroler & Pemrograman Dasar'
+      ]
     },
     {
       id: 6,
@@ -93,7 +133,15 @@ const schoolData = {
       nama: 'Layanan Perbankan',
       icon: 'fas fa-university',
       deskripsi: 'Materi pelayanan nasabah, produk perbankan, akuntansi dasar, manajemen kas, serta fintech & digital banking. Menekankan etika layanan dan keamanan data.',
-      accent: '#6366F1'
+      accent: '#6366F1',
+      subjects: [
+        'Layanan Lembaga Perbankan & Keuangan Mikro',
+        'Akuntansi Perbankan & Dasar',
+        'Etika Profesi & Pelayanan Prima (Service Excellence)',
+        'Pengelolaan Kas & Teller',
+        'Komputer Akuntansi (MYOB/Spreadsheet)',
+        'Produk Kreatif & Kewirausahaan'
+      ]
     },
     {
       id: 7,
@@ -101,7 +149,15 @@ const schoolData = {
       nama: 'Bisnis Daring dan Pemasaran',
       icon: 'fas fa-chart-line',
       deskripsi: 'Strategi digital marketing, copywriting, konten sosial media, marketplace, analitik, dan campaign performance. Ada praktik membuat brand kit dan toko daring end-to-end.',
-      accent: '#EC4899'
+      accent: '#EC4899',
+      subjects: [
+        'Digital Marketing & Social Media Strategy',
+        'Bisnis Online (E-Commerce & Marketplace)',
+        'Perencanaan Bisnis & Marketing Mix',
+        'Administrasi Transaksi & Kasir',
+        'Penataan Produk (Visual Merchandising)',
+        'Copywriting & Content Creation'
+      ]
     }
   ],
   teachers: [

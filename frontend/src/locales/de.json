@@ -1,0 +1,158 @@
+{
+    "nav": {
+        "home": "Startseite",
+        "profile": "Profil",
+        "majors": "Fachrichtungen",
+        "teachers": "Lehrer",
+        "gallery": "Galerie",
+        "alumni": "Absolventen",
+        "news": "Nachrichten",
+        "contact": "Kontakt",
+        "ppdb": "Anmeldung"
+    },
+    "hero": {
+        "welcome": "Willkommen bei SMK Pertiwi Kuningan",
+        "subtitle": "Bildung einer überlegenen, charakterfesten und arbeitsbereiten Generation im digitalen Zeitalter.",
+        "cta_ppdb": "Jetzt Registrieren",
+        "cta_more": "Mehr Erfahren"
+    },
+    "home_news": {
+        "title": "Pertiwi Nachrichten",
+        "subtitle": "Aktuelle Informationen und Leistungen der Schüler der SMK Pertiwi Kuningan",
+        "view_all": "Alle Nachrichten ansehen",
+        "read_more": "Mehr lesen"
+    },
+    "footer": {
+        "desc": "Bildung einer überlegenen und edlen Charaktergeneration im digitalen Zeitalter.",
+        "quick_links": "Schnelllinks",
+        "contact_us": "Kontaktiere Uns",
+        "copyright": "© 2026 SMK Pertiwi Kuningan. Alle Rechte vorbehalten."
+    },
+    "profile": {
+        "title": "Schulprofil",
+        "subtitle": "Lernen Sie SMK Pertiwi Kuningan näher kennen",
+        "vision": "Vision",
+        "mission": "Mission",
+        "history": "Geschichte",
+        "history_content": "SMK Pertiwi Kuningan ist die erste Berufsschule im Bezirk Kuningan (gegründet 1979) auf einer Fläche von +/- 20.000 m2. Sie hat mehr als 11.000 Absolventen hervorgebracht, die in Industrie/Regierung arbeiten, an staatlichen/privaten Universitäten studieren oder Unternehmer werden. Aktuell gibt es 2.345 aktive Schüler mit einem Industriecurriculum und vollständigen Praxiseinrichtungen einschließlich eines Schwimmbads.",
+        "vision_content": "Verwirklichung von Absolventen der SMK Pertiwi Kuningan, die einen edlen Charakter haben, kompetent, leistungsstark und unternehmerisch sind.",
+        "mission_list": [
+            "Bildung von Absolventen, die gläubig sind und Gott dienen.",
+            "Besitz von Hard Skills und Soft Skills nach Industriestandard.",
+            "Steigerung der akademischen und nicht-akademischen Leistungen.",
+            "Vorbereitung unabhängiger Absolventen und Unternehmer."
+        ],
+        "advantages_title": "Vorteile",
+        "advantages_list": [
+            "Eine der besten Schulen in West-Java",
+            "Akkreditiert mit A 'Exzellent'",
+            "ISO 9001:2015 zertifiziert",
+            "Praxiseinrichtungen nach Industriestandard",
+            "Yamaha & Axioo Spezialklassen",
+            "Zentrum für Exzellenz (SMK PK)"
+        ]
+    },
+    "majors": {
+        "title": "Fachkompetenzen",
+        "subtitle": "Exzellente Studienwahl für eine glänzende Zukunft.",
+        "rpl": {
+            "name": "Softwaretechnik",
+            "desc": "Fokus auf Software-Engineering, Web-/Mobile-App-Architektur, DevOps-Grundlagen, UI/UX und agile Zusammenarbeit."
+        },
+        "tkj": {
+            "name": "Computer- und Netzwerktechnik",
+            "desc": "Vertiefung in Design und Implementierung von Kabel-/Drahtlosnetzwerken, Servervirtualisierung, Netzwerksicherheit und Cloud Computing."
+        },
+        "tkr": {
+            "name": "Leichtfahrzeugtechnik",
+            "desc": "Lernen von Diagnose und Wartung von Benzin-/EV-Leichtfahrzeugen, EFI-Systemen und Automatikgetrieben."
+        },
+        "tsm": {
+            "name": "Motorradtechnik",
+            "desc": "Praxis in Tune-up, Überholung, Einspritzsystemen, Elektrik und täglicher/Wettbewerbs-Motorradwartung."
+        },
+        "to": {
+            "name": "Autotronik",
+            "desc": "Fokus auf moderne Automobilelektronik: Sensoren/Aktuatoren, ECU, CAN-Bus und aktive Sicherheitssysteme."
+        },
+        "lp": {
+            "name": "Bankdienstleistungen",
+            "desc": "Materialien zu Kundenservice, Bankprodukten, Grundlagen der Buchhaltung, Cash-Management und Digital Banking."
+        },
+        "bdp": {
+            "name": "Online-Geschäft und Marketing",
+            "desc": "Digitale Marketingstrategie, Copywriting, Social-Media-Inhalte, Marktplatz und Geschäftsanalyse."
+        },
+        "detail": "Details Anzeigen"
+    },
+    "teachers": {
+        "title": "Lehrer & Mitarbeiter",
+        "subtitle": "Professionelle Pädagogen, bereit, Schüler zum Erfolg zu führen.",
+        "headmaster_role": "Schulleiter",
+        "headmaster_desc": "Führen mit einer Vision, um Absolventen zu schaffen, die überlegen, kompetent und charakterstark sind.",
+        "search_placeholder": "Suche nach Lehrername oder Fach...",
+        "role_teacher": "Lehrer"
+    },
+    "gallery": {
+        "title": "Aktivitätengalerie",
+        "subtitle": "Dokumentation der Aktivitäten und Leistungen der SMK Pertiwi Kuningan",
+        "filter_all": "Alle"
+    },
+    "ppdb": {
+        "title": "Online-Anmeldung",
+        "subtitle": "Aufnahme neuer Schüler für das Studienjahr 2026/2027",
+        "tab_register": "Neu Registrieren",
+        "tab_check": "Status Prüfen",
+        "info_title": "Registrierung neuer Schüler",
+        "info_desc": "Registrieren Sie sich, um Teil von SMK Pertiwi Kuningan zu werden",
+        "period": "Registrierungszeitraum",
+        "quota": "Quote",
+        "quota_desc": "Begrenzt pro Fachrichtung",
+        "btn_start": "Registrierung Starten",
+        "input_nisn": "NISN eingeben",
+        "search_placeholder": "Daten suchen...",
+        "btn_check": "Status Prüfen",
+        "status_title": "Registrierungsstatus",
+        "status_pending": "AUSSTEHEND",
+        "status_verified": "VERIFIZIERT",
+        "status_rejected": "ABGELEHNT"
+    },
+    "contact": {
+        "title": "Kontaktiere Uns",
+        "subtitle": "Wir sind bereit, Ihre Informationsbedürfnisse zu erfüllen",
+        "address": "Adresse",
+        "phone": "Telefon",
+        "email": "E-Mail",
+        "office_hours": "Öffnungszeiten",
+        "form": {
+            "title": "Nachricht Senden",
+            "name": "Vollständiger Name",
+            "email_label": "E-Mail",
+            "message": "Nachricht",
+            "submit": "Nachricht Senden",
+            "placeholder_name": "Ihr Name",
+            "placeholder_email": "email@beispiel.de",
+            "placeholder_message": "Schreiben Sie Ihre Nachricht..."
+        }
+    },
+    "alumni": {
+        "title": "Erfolgreiche Absolventen",
+        "subtitle": "Inspirierende Geschichten von Absolventen der SMK Pertiwi",
+        "stat_total": "Gesamt Absolventen",
+        "stat_employed": "Beschäftigt",
+        "stat_entrepreneur": "Unternehmer",
+        "stat_salary": "Durchschnittsgehalt",
+        "featured_title": "Ausgewählte Absolventen",
+        "all_title": "Alle Absolventen",
+        "cta_title": "Möchten Sie der nächste erfolgreiche Absolvent sein?",
+        "cta_desc": "Treten Sie SMK Pertiwi bei und erreichen Sie Ihren Karriereerfolg!",
+        "cta_btn": "Jetzt Registrieren"
+    },
+    "news_page": {
+        "title": "Nachrichten & Informationen",
+        "subtitle": "Aktuelle Nachrichten über Aktivitäten und Leistungen der SMK Pertiwi Kuningan",
+        "loading": "Nachrichten laden...",
+        "empty": "Keine aktuellen Nachrichten.",
+        "read_more": "Mehr lesen"
+    }
+}

@@ -1,0 +1,158 @@
+{
+    "nav": {
+        "home": "ホーム",
+        "profile": "プロフィール",
+        "majors": "専攻",
+        "teachers": "先生",
+        "gallery": "ギャラリー",
+        "alumni": "卒業生",
+        "news": "ニュース",
+        "contact": "お問い合わせ",
+        "ppdb": "入学案内"
+    },
+    "hero": {
+        "welcome": "SMK Pertiwi Kuningan へようこそ",
+        "subtitle": "デジタル時代における優れた人格と即戦力となる世代の育成。",
+        "cta_ppdb": "今すぐ登録",
+        "cta_more": "詳細を見る"
+    },
+    "home_news": {
+        "title": "Pertiwi ニュース",
+        "subtitle": "SMK Pertiwi Kuningan の学生の最新情報と実績",
+        "view_all": "すべてのニュースを見る",
+        "read_more": "続きを読む"
+    },
+    "footer": {
+        "desc": "デジタル時代における優れた高潔な人格の育成。",
+        "quick_links": "クイックリンク",
+        "contact_us": "お問い合わせ",
+        "copyright": "© 2026 SMK Pertiwi Kuningan. 全著作権所有。"
+    },
+    "profile": {
+        "title": "学校プロフィール",
+        "subtitle": "SMK Pertiwi Kuningan について詳しく知る",
+        "vision": "ビジョン",
+        "mission": "ミッション",
+        "history": "歴史",
+        "history_content": "SMK Pertiwi Kuningan は、クニンガン県初の職業高校（1979年設立）で、敷地面積は +/- 20,000 m2 です。これまでに11,000人以上の卒業生を輩出し、産業界/政府で働き、国公立/私立大学に進学し、または起業しています。現在の在校生は2,345人で、産業カリキュラムとプールを含む充実した実習施設を備えています。",
+        "vision_content": "高潔な人格を持ち、有能で、優秀な成績を収め、起業家精神を持つ SMK Pertiwi Kuningan の卒業生を実現する。",
+        "mission_list": [
+            "信仰心を持ち、神を敬う卒業生を育成する。",
+            "産業界標準のハードスキルとソフトスキルを習得する。",
+            "学業および非学業の成果を向上させる。",
+            "創造的な製品を通じて自立した卒業生と起業家を準備する。"
+        ],
+        "advantages_title": "利点",
+        "advantages_list": [
+            "西ジャワで最高の学校の一つ",
+            "認定A「優秀」",
+            "ISO 9001:2015 認証取得",
+            "業界標準の実習施設",
+            "ヤマハ＆Axioo特別クラス",
+            "センター・オブ・エクセレンス (SMK PK)"
+        ]
+    },
+    "majors": {
+        "title": "専門スキル",
+        "subtitle": "明るい未来のための優れた学習プログラムの選択。",
+        "rpl": {
+            "name": "ソフトウェア工学",
+            "desc": "ソフトウェア工学、Web/モバイルアプリのアーキテクチャ、基本的なDevOps、UI/UX、アジャイルコラボレーションに焦点を当てます。"
+        },
+        "tkj": {
+            "name": "コンピュータ・ネットワーク工学",
+            "desc": "有線/無線ネットワークの設計と実装、サーバー仮想化、ネットワークセキュリティ、クラウドコンピューティングを深く学びます。"
+        },
+        "tkr": {
+            "name": "軽自動車工学",
+            "desc": "ガソリン/EV軽自動車、EFIシステム、オートマチックトランスミッションの診断とメンテナンスを学びます。"
+        },
+        "tsm": {
+            "name": "オートバイ工学",
+            "desc": "チューンナップ、オーバーホール、インジェクションシステム、電気系統、日常/競技用オートバイのメンテナンスの実習。"
+        },
+        "to": {
+            "name": "オートトロニック",
+            "desc": "現代の自動車エレクトロニクスに焦点：センサー/アクチュエータ、ECU、CANバス、能動的安全システム。"
+        },
+        "lp": {
+            "name": "銀行サービス",
+            "desc": "顧客サービス、銀行商品、基本的な会計、現金管理、デジタルバンキングに関する教材。"
+        },
+        "bdp": {
+            "name": "オンラインビジネスとマーケティング",
+            "desc": "デジタルマーケティング戦略、コピーライティング、ソーシャルメディアコンテンツ、マーケットプレイス、ビジネス分析。"
+        },
+        "detail": "詳細を見る"
+    },
+    "teachers": {
+        "title": "教職員",
+        "subtitle": "生徒を成功に導く準備ができている専門の教育者。",
+        "headmaster_role": "校長",
+        "headmaster_desc": "優秀で有能、かつ高潔な人格を持つ卒業生を育成するというビジョンを持って指導します。",
+        "search_placeholder": "先生の名前や科目を検索...",
+        "role_teacher": "先生"
+    },
+    "gallery": {
+        "title": "活動ギャラリー",
+        "subtitle": "SMK Pertiwi Kuningan の活動と実績の記録",
+        "filter_all": "すべて"
+    },
+    "ppdb": {
+        "title": "オンライン入学",
+        "subtitle": "2026/2027年度 新入生募集",
+        "tab_register": "新規登録",
+        "tab_check": "ステータス確認",
+        "info_title": "新入生登録",
+        "info_desc": "SMK Pertiwi Kuningan の一員になるために登録する",
+        "period": "登録期間",
+        "quota": "定員",
+        "quota_desc": "専攻ごとに制限あり",
+        "btn_start": "登録を開始",
+        "input_nisn": "NISNを入力",
+        "search_placeholder": "データを検索...",
+        "btn_check": "ステータス確認",
+        "status_title": "登録ステータス",
+        "status_pending": "保留中",
+        "status_verified": "確認済み",
+        "status_rejected": "拒否されました"
+    },
+    "contact": {
+        "title": "お問い合わせ",
+        "subtitle": "情報ニーズにお応えします",
+        "address": "住所",
+        "phone": "電話",
+        "email": "メール",
+        "office_hours": "営業時間",
+        "form": {
+            "title": "メッセージを送信",
+            "name": "氏名",
+            "email_label": "メールアドレス",
+            "message": "メッセージ",
+            "submit": "送信",
+            "placeholder_name": "お名前",
+            "placeholder_email": "email@example.com",
+            "placeholder_message": "メッセージをご記入ください..."
+        }
+    },
+    "alumni": {
+        "title": "活躍する卒業生",
+        "subtitle": "様々な分野で成功した SMK Pertiwi 卒業生の感動的なストーリー",
+        "stat_total": "卒業生総数",
+        "stat_employed": "就職",
+        "stat_entrepreneur": "起業家",
+        "stat_salary": "平均給与",
+        "featured_title": "注目の卒業生",
+        "all_title": "すべての卒業生",
+        "cta_title": "次の成功する卒業生になりませんか？",
+        "cta_desc": "SMK Pertiwi に参加して、キャリアの成功を掴みましょう！",
+        "cta_btn": "今すぐ登録"
+    },
+    "news_page": {
+        "title": "ニュース & 情報",
+        "subtitle": "SMK Pertiwi Kuningan の活動と実績に関する最新ニュース",
+        "loading": "ニュースを読み込み中...",
+        "empty": "最新のニュースはありません。",
+        "read_more": "続きを読む"
+    }
+}

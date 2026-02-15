@@ -28,40 +28,61 @@ class Settings(BaseSettings):
     cors_origins: Optional[str] = Field(None, env="CORS_ORIGINS")
 
     # Web Search Configuration
-    enable_web_search: bool = Field(False, env="ENABLE_WEB_SEARCH")
-    auto_web_search: bool = Field(False, env="AUTO_WEB_SEARCH")
-    web_search_results: int = Field(5, env="WEB_SEARCH_RESULTS")
-    web_search_cache_ttl: int = Field(1800, env="WEB_SEARCH_CACHE_TTL")
-    web_search_cache_max: int = Field(120, env="WEB_SEARCH_CACHE_MAX")
-    serpapi_api_key: Optional[SecretStr] = Field(None, env="SERPAPI_API_KEY")
-    serpapi_engine: str = Field("google", env="SERPAPI_ENGINE")
-    serpapi_hl: str = Field("id", env="SERPAPI_HL")
-    serpapi_gl: str = Field("id", env="SERPAPI_GL")
 
-    # Rate Limit Configuration
-    rate_limit_per_min: int = Field(30, env="RATE_LIMIT_PER_MIN")
-    rate_limit_window: int = Field(60, env="RATE_LIMIT_WINDOW")
-    min_request_interval: float = Field(1.2, env="MIN_REQUEST_INTERVAL")
-
-    # Moderation Configuration
-    moderation_enabled: bool = Field(True, env="MODERATION_ENABLED")
-    moderation_blocklist: str = Field(
-        "anjing,babi,bangsat,brengsek,kontol,memek,ngentot,goblok,tolol,fuck,shit",
-        env="MODERATION_BLOCKLIST"
-    )
-
-    # Admin Configuration
-    admin_key: Optional[SecretStr] = Field(None, env="ADMIN_KEY")
-
+class Settings(BaseSettings):
+    # API Keys
+    gemini_api_key: str
+    admin_key: str = "prismoji"
+    
+    # Server Config
+    port: int = 8000
+    frontend_url: str = "http://localhost:5173"
+    app_name: str = "SMK Pertiwi Chatbot"
+    
+    # Gemini Config
+    gemini_model: str = "gemini-1.5-flash"
+    max_tokens: int = 1000
+    temperature: float = 0.7
+    
+    # Web Search
+    enable_web_search: bool = True
+    auto_web_search: bool = False
+    web_search_results: int = 5
+    web_search_cache_ttl: int = 1800
+    web_search_cache_max: int = 120
+    
+    # Rate Limiting
+    rate_limit_per_min: int = 30
+    rate_limit_window: int = 60
+    min_request_interval: float = 1.2
+    
+    # Moderation
+    moderation_enabled: bool = True
+    moderation_blocklist: str = "anjing,babi,bangsat,brengsek,kontol,memek,ngentot,goblok,tolol,fuck,shit"
+    
+    # SerpAPI
+    serpapi_api_key: str = ""
+    serpapi_engine: str = "google"
+    serpapi_hl: str = "id"
+    serpapi_gl: str = "id"
+    
+    # Email Configuration
+    email_host: str = "smtp.gmail.com"
+    email_port: int = 587
+    email_user: str = "ozieefauzi599@gmail.com"
+    email_password: str = ""
+    
     class Config:
         env_file = ".env"
+        case_sensitive = False
+        extra = "ignore"  # Allow extra fields in .env without error
         env_file_encoding = "utf-8"
 
     @property
     def cors_allow_origins(self) -> List[str]:
-        if self.cors_origins:
-            items = [item.strip() for item in self.cors_origins.split(",") if item.strip()]
-            return items
+        # The cors_origins field was removed in the new Settings class definition.
+        # This property now needs to be adapted or removed if it's no longer relevant.
+        # Assuming it should now just return the default origins plus the frontend_url.
         origins = list(DEFAULT_CORS_ORIGINS)
         if self.frontend_url and self.frontend_url not in origins:
             origins.append(self.frontend_url)

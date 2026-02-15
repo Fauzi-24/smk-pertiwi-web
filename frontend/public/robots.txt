@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smkpertiwi.sch.id/sitemap.xml

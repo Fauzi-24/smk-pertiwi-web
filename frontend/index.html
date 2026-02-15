@@ -1,14 +1,101 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/SMK_PERTIWI_KUNINGAN-removebg-preview.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>🤖 Pertiwi Assistant - SMK Pertiwi Kuningan</title>
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="SMK Pertiwi" />
+
+    <!-- SEO Meta Tags -->
+    <title>SMK Pertiwi Kuningan - Sekolah Menengah Kejuruan Terbaik di Kuningan</title>
+    <meta name="description"
+        content="Website resmi SMK Pertiwi Kuningan dengan 7 jurusan unggulan (RPL, TKJ, TKR, TSM, TO, LP, BDP). Dilengkapi AI Chatbot Prism untuk membantu informasi sekolah." />
+    <meta name="keywords"
+        content="SMK Pertiwi Kuningan, sekolah kuningan, SMK kuningan, jurusan RPL, TKJ, TKR, TSM, PPDB SMK, AI chatbot sekolah" />
+    <meta name="author" content="Fathurrachman Fauzi" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://smkpertiwi.sch.id/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://smkpertiwi.sch.id/" />
+    <meta property="og:title" content="SMK Pertiwi Kuningan - Sekolah Menengah Kejuruan Terbaik" />
+    <meta property="og:description"
+        content="Sekolah dengan 7 jurusan unggulan dan AI Chatbot Prism untuk membantu informasi." />
+    <meta property="og:image" content="https://smkpertiwi.sch.id/SMK_PERTIWI_KUNINGAN-removebg-preview.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://smkpertiwi.sch.id/" />
+    <meta property="twitter:title" content="SMK Pertiwi Kuningan" />
+    <meta property="twitter:description" content="Sekolah dengan 7 jurusan unggulan dan AI Chatbot Prism." />
+    <meta property="twitter:image" content="https://smkpertiwi.sch.id/SMK_PERTIWI_KUNINGAN-removebg-preview.png" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "SMK Pertiwi Kuningan",
+      "alternateName": "SMK Pertiwi",
+      "url": "https://smkpertiwi.sch.id",
+      "logo": "https://smkpertiwi.sch.id/SMK_PERTIWI_KUNINGAN-removebg-preview.png",
+      "image": "https://smkpertiwi.sch.id/SMK_PERTIWI_KUNINGAN-removebg-preview.png",
+      "description": "Sekolah Menengah Kejuruan Pertiwi Kuningan dengan 7 jurusan unggulan: RPL, TKJ, TKR, TSM, TO, LP, BDP. Dilengkapi AI Chatbot untuk informasi sekolah.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jalan Siliwangi No. 26A, Kasturi",
+        "addressLocality": "Kuningan",
+        "addressRegion": "Jawa Barat",
+        "addressCountry": "ID"
+      },
+      "telephone": "(0232) 871146",
+      "email": "info@smkpertiwi.sch.id",
+      "sameAs": [
+        "https://www.facebook.com/smkpertiwi",
+        "https://www.instagram.com/smkpertiwi",
+        "https://www.youtube.com/@smkpertiwi"
+      ]
+    }
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((registration) => {
+                        console.log('SW registered:', registration);
+                    })
+                    .catch((error) => {
+                        console.log('SW registration failed:', error);
+                    });
+            });
+        }
+    </script>
 </body>
+
 </html>

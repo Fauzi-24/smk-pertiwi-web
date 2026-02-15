@@ -1,0 +1,268 @@
+{
+    "nav": {
+        "home": "Home",
+        "profile": "Profile",
+        "majors": "Majors",
+        "teachers": "Teachers",
+        "gallery": "Gallery",
+        "alumni": "Alumni",
+        "news": "News",
+        "contact": "Contact",
+        "ppdb": "Admissions"
+    },
+    "hero": {
+        "welcome": "Welcome to SMK Pertiwi Kuningan",
+        "subtitle": "Creating Superior, Character-Building, and Work-Ready Generation in the Digital Era.",
+        "cta_ppdb": "Register Now",
+        "cta_more": "Learn More"
+    },
+    "home_news": {
+        "title": "Pertiwi News",
+        "subtitle": "Latest info and achievements of SMK Pertiwi Kuningan students",
+        "view_all": "View All News",
+        "read_more": "Read More"
+    },
+    "footer": {
+        "desc": "Shaping a Superior and Noble Character Generation in the Digital Era.",
+        "quick_links": "Quick Links",
+        "contact_us": "Contact Us",
+        "copyright": "© 2026 SMK Pertiwi Kuningan. All Rights Reserved."
+    },
+    "profile": {
+        "title": "School Profile",
+        "subtitle": "Get to know SMK Pertiwi Kuningan closer",
+        "vision": "Vision",
+        "mission": "Mission",
+        "history": "History",
+        "history_content": "SMK Pertiwi Kuningan is the first Vocational High School in Kuningan Regency (established 1979) on an area of +/- 20,000 m2. It has graduated more than 11,000 alumni who work in industry/government, study at state/private universities, or become entrepreneurs. Current active students are 2,345 with an industrial curriculum and complete practical facilities including a swimming pool.",
+        "vision_content": "Realizing SMK Pertiwi Kuningan graduates who have noble character, are competent, high-achieving, and have an entrepreneurial spirit.",
+        "mission_list": [
+            "To form graduates who are faithful and reject God Almighty.",
+            "Possess industrial and work-world standard hard skills and soft skills.",
+            "Improve academic and non-academic achievements.",
+            "Prepare independent graduates and entrepreneurs through creative products."
+        ],
+        "advantages_title": "Advantages",
+        "advantages_list": [
+            "One of the best schools in West Java",
+            "Accredited A 'Excellent'",
+            "ISO 9001:2015 Certified",
+            "Industry standard practice facilities",
+            "Yamaha & Axioo Special Classes",
+            "Center of Excellence (SMK PK)"
+        ]
+    },
+    "majors": {
+        "title": "Competency Skills",
+        "subtitle": "Excellent study program choices for a bright future.",
+        "rpl": {
+            "name": "Software Engineering",
+            "desc": "Focus on software engineering, web/mobile app architecture, basic DevOps, UI/UX, and agile collaboration."
+        },
+        "tkj": {
+            "name": "Network & Computer Engineering",
+            "desc": "Deepening design and implementation of wired/wireless networks, server virtualization, network security, and cloud computing."
+        },
+        "tkr": {
+            "name": "Light Vehicle Engineering",
+            "desc": "Learning diagnosis and maintenance of gasoline/EV light vehicles, EFI systems, and automatic transmissions."
+        },
+        "tsm": {
+            "name": "Motorcycle Engineering",
+            "desc": "Practice tune-up, overhaul, injection systems, electrical, and daily/competition motorcycle maintenance."
+        },
+        "to": {
+            "name": "Autotronic",
+            "desc": "Focus on modern automotive electronics: sensors/actuators, ECU, CAN bus, and active safety systems."
+        },
+        "lp": {
+            "name": "Banking Services",
+            "desc": "Materials on customer service, banking products, basic accounting, cash management, and digital banking."
+        },
+        "bdp": {
+            "name": "Online Business and Marketing",
+            "desc": "Digital marketing strategy, copywriting, social media content, marketplace, and business analysis."
+        },
+        "detail": "View Detail"
+    },
+    "teachers": {
+        "title": "Teachers & Staff",
+        "subtitle": "Professional educators ready to guide students towards success.",
+        "headmaster_role": "Headmaster",
+        "headmaster_desc": "Leading with a vision to create graduates who are superior, competent, and have noble character.",
+        "search_placeholder": "Search teacher name or subject...",
+        "role_teacher": "Teacher"
+    },
+    "gallery": {
+        "title": "Activity Gallery",
+        "subtitle": "Documentation of activities and achievements of SMK Pertiwi Kuningan",
+        "filter_all": "All",
+        "categories": {
+            "Ekstrakurikuler": "Extracurricular",
+            "Olahraga": "Sports",
+            "Prestasi": "Achievements",
+            "Lomba": "Competitions",
+            "Upacara": "Ceremony",
+            "Kegiatan": "Activities",
+            "Kelas": "Class"
+        }
+    },
+    "ppdb": {
+        "title": "Online Admissions",
+        "subtitle": "New Student Admissions for Academic Year 2026/2027",
+        "tab_register": "Register New",
+        "tab_check": "Check Status",
+        "info_title": "New Student Registration",
+        "info_desc": "Register to become part of SMK Pertiwi Kuningan",
+        "period": "Registration Period",
+        "quota": "Quota",
+        "quota_desc": "Limited per major",
+        "btn_start": "Start Registration",
+        "input_nisn": "Enter NISN",
+        "search_placeholder": "Search data...",
+        "btn_check": "Check Status",
+        "status_title": "Registration Status",
+        "status_pending": "PENDING",
+        "status_verified": "VERIFIED",
+        "status_rejected": "REJECTED"
+    },
+    "contact": {
+        "title": "Contact Us",
+        "subtitle": "We are ready to serve your information needs",
+        "address": "Address",
+        "phone": "Phone",
+        "email": "Email",
+        "office_hours": "Office Hours",
+        "form": {
+            "title": "Send Message",
+            "name": "Full Name",
+            "email_label": "Email",
+            "message": "Message",
+            "submit": "Send Message",
+            "placeholder_name": "Your Name",
+            "placeholder_email": "email@example.com",
+            "placeholder_message": "Write your message..."
+        }
+    },
+    "alumni": {
+        "title": "Successful Alumni",
+        "subtitle": "Inspiring stories of SMK Pertiwi graduates who have succeeded in various fields",
+        "stat_total": "Total Alumni",
+        "stat_employed": "Employed",
+        "stat_entrepreneur": "Entrepreneurs",
+        "stat_salary": "Average Salary",
+        "featured_title": "Featured Alumni",
+        "all_title": "All Alumni",
+        "cta_title": "Want to be the Next Successful Alumni?",
+        "cta_desc": "Join SMK Pertiwi and achieve your career success!",
+        "cta_btn": "Register Now"
+    },
+    "news_page": {
+        "title": "News & Information",
+        "subtitle": "Latest news about activities and achievements of SMK Pertiwi Kuningan",
+        "loading": "Loading news...",
+        "empty": "No recent news.",
+        "read_more": "Read More"
+    },
+    "news_data": {
+        "item_1": {
+            "title": "Nesman Soars! Futsal and Silat Achievement Gift for New Principal",
+            "summary": "SMK Pertiwi Kuningan scores brilliant achievements in sports again. The Futsal and Pencak Silat teams successfully presented trophies as a warm welcome gift for the new Principal."
+        },
+        "item_2": {
+            "title": "SMK Pertiwi Presents 'Simpai Sandekala Theater' at Cultural Carnival",
+            "summary": "Enlivening the 527th Anniversary of Kuningan Regency, SMK Pertiwi Kuningan students amazed the audience with the theatrical performance 'Simpai Sandekala' on Jalan Siliwangi."
+        },
+        "item_3": {
+            "title": "'Free 30 Percent Students' Program for Educational Equity",
+            "summary": "SMK Pertiwi Kuningan launched a massive scholarship program, waiving tuition fees for 30% of students as a form of social care."
+        },
+        "item_4": {
+            "title": "First in Indonesia! Yamaha Motorcycle Racing Curriculum",
+            "summary": "Exclusive collaboration with Yamaha Racing Indonesia, SMK Pertiwi Kuningan becomes the first school to implement a professional motorcycle racing standard curriculum."
+        },
+        "item_5": {
+            "title": "45th Anniversary 'Casperday' Enlivened by Armada Band",
+            "summary": "The peak of the school's 'Casperday' anniversary celebration was a blast with a special performance from the Armada Band which entertained thousands of students and alumni."
+        },
+        "item_6": {
+            "title": "Axioo Class Program Comparative Study Visit",
+            "summary": "Becoming a national reference, SMK Pertiwi received a comparative study visit from 13 Vocational Schools throughout Indonesia regarding the implementation of the Axioo Class Program."
+        },
+        "item_7": {
+            "title": "Yamaha Indonesia Support for School Racing Team",
+            "summary": "PT. Yamaha Indonesia Motor Manufacturing (YIMM) handed over engine and chassis assistance for the research of the SMK Pertiwi Kuningan racing team."
+        }
+    },
+    "alumni_data": {
+        "profile_1": {
+            "achievement": "Best graduate 2022, now working as a Software Engineer at Google Indonesia with a salary of 25 million/month."
+        },
+        "profile_2": {
+            "achievement": "Became a Network Engineer at Telkom after graduating. Handling network infrastructure for the West Java region."
+        },
+        "profile_3": {
+            "achievement": "Working at Astra as a senior technician. Has certified more than 50 junior mechanics."
+        },
+        "profile_4": {
+            "achievement": "Founder of an education technology startup that has received 5 billion funding from investors."
+        },
+        "profile_5": {
+            "achievement": "Received Azure certification and works as a Cloud Architect at Microsoft with a salary of 30 million/month."
+        }
+    },
+    "gallery_data": {
+        "item_1": {
+            "title": "SMK Pertiwi Scouts",
+            "description": "Routine scouting activities every Friday afternoon"
+        },
+        "item_2": {
+            "title": "Basketball Practice",
+            "description": "SMK Pertiwi basketball team practicing for competition"
+        },
+        "item_3": {
+            "title": "Unknown Title",
+            "description": "Unknown Description"
+        },
+        "item_4": {
+            "title": "1st Place District LKS",
+            "description": "RPL student won 1st place in Web Design competition"
+        },
+        "item_5": {
+            "title": "Programming Competition",
+            "description": "SMK Pertiwi delegation in coding competition"
+        },
+        "item_6": {
+            "title": "Independence Day Ceremony",
+            "description": "Flag ceremony commemorating Indonesian Independence Day"
+        },
+        "item_7": {
+            "title": "MPLS 2024",
+            "description": "School Environment Introduction Period for new students"
+        },
+        "item_8": {
+            "title": "TKR Engine Practice",
+            "description": "TKR students practicing vehicle engine repair"
+        },
+        "item_9": {
+            "title": "RPL Coding Class",
+            "description": "RPL students learning web development"
+        },
+        "item_10": {
+            "title": "TKJ Network Practice",
+            "description": "Computer network configuration in TKJ lab"
+        },
+        "item_11": {
+            "title": "Ramadan Flash Pondok",
+            "description": "Spiritual activities in the month of Ramadan"
+        },
+        "item_12": {
+            "title": "Study Tour to Jakarta",
+            "description": "Industrial visit and educational tour"
+        },
+        "item_13": {
+            "title": "School Art Performance",
+            "description": "Student art and cultural performance"
+        }
+    }
+}

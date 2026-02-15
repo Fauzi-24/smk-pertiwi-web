@@ -1,0 +1,264 @@
+{
+    "nav": {
+        "home": "Beranda",
+        "profile": "Profil",
+        "majors": "Jurusan",
+        "teachers": "Guru",
+        "gallery": "Galeri",
+        "alumni": "Alumni",
+        "news": "Berita",
+        "contact": "Kontak",
+        "ppdb": "PPDB Online"
+    },
+    "hero": {
+        "welcome": "Selamat Datang di SMK Pertiwi Kuningan",
+        "subtitle": "Mencetak Generasi Unggul, Berkarakter, dan Siap Kerja di Era Digital.",
+        "cta_ppdb": "Daftar Sekarang",
+        "cta_more": "Selengkapnya"
+    },
+    "home_news": {
+        "title": "Kabar Pertiwi",
+        "subtitle": "Info terkini dan prestasi siswa SMK Pertiwi Kuningan",
+        "view_all": "Lihat Semua Berita",
+        "read_more": "Baca Selengkapnya"
+    },
+    "footer": {
+        "desc": "Membentuk Generasi Unggul dan Berakhlak Mulia di Era Digital.",
+        "quick_links": "Tautan Cepat",
+        "contact_us": "Hubungi Kami",
+        "copyright": "© 2026 SMK Pertiwi Kuningan. Hak Cipta Dilindungi."
+    },
+    "profile": {
+        "title": "Profil Sekolah",
+        "subtitle": "Mengenal lebih dekat SMK Pertiwi Kuningan",
+        "vision": "Visi",
+        "mission": "Misi",
+        "history": "Sejarah",
+        "history_content": "SMK Pertiwi Kuningan adalah STM pertama di Kabupaten Kuningan (berdiri 1979) di lahan +/-20.000 m2. Sudah meluluskan lebih dari 11.000 alumni yang bekerja di industri/pemerintahan, kuliah di PTN/PTS, atau berwirausaha. Siswa aktif kini 2.345 dengan kurikulum industri dan fasilitas praktik lengkap termasuk kolam renang.",
+        "vision_content": "Mewujudkan lulusan SMK Pertiwi Kuningan memiliki akhlak mulia, kompeten, berprestasi, dan berjiwa wirausaha.",
+        "mission_list": [
+            "Membentuk lulusan beriman dan bertakwa kepada Tuhan Yang Maha Esa.",
+            "Memiliki hardskill dan softskill berstandar industri dan dunia kerja.",
+            "Meningkatkan prestasi akademik dan non-akademik.",
+            "Menyiapkan tamatan mandiri dan berwirausaha melalui produk kreatif."
+        ],
+        "advantages_title": "Keunggulan",
+        "advantages_list": [
+            "Salah satu sekolah terbaik di Jawa Barat",
+            "Terakreditasi A 'Sangat Baik'",
+            "Bersertifikat ISO 9001:2015",
+            "Fasilitas praktik standar industri",
+            "Kelas Khusus Yamaha & Axioo",
+            "SMK Pusat Keunggulan (Center of Excellence)"
+        ]
+    },
+    "majors": {
+        "title": "Kompetensi Keahlian",
+        "subtitle": "Pilihan program studi unggulan untuk masa depan cerah.",
+        "rpl": {
+            "name": "Rekayasa Perangkat Lunak",
+            "desc": "Fokus pada software engineering, arsitektur aplikasi web/mobile, DevOps dasar, UI/UX, dan kolaborasi agile."
+        },
+        "tkj": {
+            "name": "Teknik Komputer dan Jaringan",
+            "desc": "Mendalami desain dan implementasi jaringan kabel/nirkabel, virtualisasi server, keamanan jaringan, dan cloud computing."
+        },
+        "tkr": {
+            "name": "Teknik Kendaraan Ringan",
+            "desc": "Pembelajaran diagnosa dan perawatan kendaraan bensin/EV ringan, sistem EFI, dan transmisi otomatis."
+        },
+        "tsm": {
+            "name": "Teknik Sepeda Motor",
+            "desc": "Praktik tune-up, overhaul, sistem injeksi, kelistrikan, dan perawatan motor harian/kompetisi."
+        },
+        "to": {
+            "name": "Ototronik",
+            "desc": "Fokus pada elektronik otomotif modern: sensor/actuator, ECU, CAN bus, dan sistem keselamatan aktif."
+        },
+        "lp": {
+            "name": "Layanan Perbankan",
+            "desc": "Materi pelayanan nasabah, produk perbankan, akuntansi dasar, manajemen kas, dan digital banking."
+        },
+        "bdp": {
+            "name": "Bisnis Daring dan Pemasaran",
+            "desc": "Strategi digital marketing, copywriting, konten sosial media, marketplace, dan analisis bisnis."
+        },
+        "detail": "Lihat Detail"
+    },
+    "teachers": {
+        "title": "Dewan Guru & Staf",
+        "subtitle": "Pendidik profesional yang siap membimbing siswa menuju kesuksesan.",
+        "headmaster_role": "Kepala Sekolah",
+        "headmaster_desc": "Memimpin dengan visi untuk menciptakan lulusan yang unggul, kompeten, dan berakhlak mulia.",
+        "search_placeholder": "Cari nama guru atau mata pelajaran...",
+        "role_teacher": "Guru"
+    },
+    "gallery": {
+        "title": "Galeri Kegiatan",
+        "subtitle": "Dokumentasi aktivitas dan prestasi SMK Pertiwi Kuningan",
+        "filter_all": "Semua",
+        "categories": {
+            "Ekstrakurikuler": "Ekstrakurikuler",
+            "Olahraga": "Olahraga",
+            "Prestasi": "Prestasi",
+            "Lomba": "Lomba",
+            "Upacara": "Upacara",
+            "Kegiatan": "Kegiatan",
+            "Kelas": "Kelas"
+        }
+    },
+    "ppdb": {
+        "title": "PPDB Online",
+        "subtitle": "Penerimaan Peserta Didik Baru Tahun Ajaran 2026/2027",
+        "tab_register": "Daftar Baru",
+        "tab_check": "Cek Status",
+        "info_title": "Pendaftaran Siswa Baru",
+        "info_desc": "Daftar menjadi bagian dari SMK Pertiwi Kuningan",
+        "period": "Periode Pendaftaran",
+        "quota": "Kuota",
+        "quota_desc": "Terbatas per jurusan",
+        "btn_start": "Mulai Pendaftaran",
+        "input_nisn": "Masukkan NISN",
+        "search_placeholder": "Cari data...",
+        "btn_check": "Cek Status",
+        "status_title": "Status Pendaftaran",
+        "status_pending": "MENUNGGU",
+        "status_verified": "TERVERIFIKASI",
+        "status_rejected": "DITOLAK"
+    },
+    "contact": {
+        "title": "Hubungi Kami",
+        "subtitle": "Kami siap melayani kebutuhan informasi Anda",
+        "address": "Alamat",
+        "phone": "Telepon",
+        "email": "Email",
+        "office_hours": "Jam Operasional",
+        "form": {
+            "title": "Kirim Pesan",
+            "name": "Nama Lengkap",
+            "email_label": "Email",
+            "message": "Pesan",
+            "submit": "Kirim Pesan",
+            "placeholder_name": "Nama Anda",
+            "placeholder_email": "email@contoh.com",
+            "placeholder_message": "Tulis pesan Anda..."
+        }
+    },
+    "alumni": {
+        "title": "Alumni Sukses",
+        "subtitle": "Kisah inspiratif lulusan SMK Pertiwi yang telah sukses di berbagai bidang",
+        "stat_total": "Total Alumni",
+        "stat_employed": "Bekerja",
+        "stat_entrepreneur": "Wirausaha",
+        "stat_salary": "Rata-rata Gaji",
+        "featured_title": "Alumni Unggulan",
+        "all_title": "Semua Alumni",
+        "cta_title": "Ingin Menjadi Alumni Sukses Berikutnya?",
+        "cta_desc": "Bergabunglah dengan SMK Pertiwi dan raih kesuksesan karirmu!",
+        "cta_btn": "Daftar Sekarang"
+    },
+    "news_page": {
+        "title": "Berita & Informasi",
+        "subtitle": "Kabar terbaru seputar kegiatan dan prestasi SMK Pertiwi Kuningan",
+        "loading": "Memuat berita...",
+        "empty": "Belum ada berita terbaru.",
+        "read_more": "Baca Selengkapnya"
+    },
+    "news_data": {
+        "item_1": {
+            "title": "Nesman Melesat! Kado Prestasi Futsal dan Silat Sambut Kepala Sekolah Baru",
+            "summary": "SMK Pertiwi Kuningan kembali mencetak prestasi gemilang di bidang olahraga. Tim Futsal dan Pencak Silat berhasil mempersembahkan piala sebagai kado sambutan hangat bagi Kepala Sekolah baru."
+        },
+        "item_2": {
+            "title": "SMK Pertiwi Tampilkan 'Teater Simpai Sandekala' di Karnaval Budaya",
+            "summary": "Memeriahkan HUT Kabupaten Kuningan ke-527, siswa SMK Pertiwi Kuningan memukau penonton dengan pertunjukan teatrikal 'Simpai Sandekala' di Jalan Siliwangi."
+        },
+        "item_3": {
+            "title": "Program 'Gratiskan 30 Persen Siswa' untuk Pemerataan Pendidikan",
+            "summary": "SMK Pertiwi Kuningan meluncurkan program beasiswa masif, menggratiskan biaya pendidikan bagi 30% siswa sebagai bentuk kepedulian sosial."
+        },
+        "item_4": {
+            "title": "Pertama di Indonesia! Kurikulum Balap Motor Yamaha",
+            "summary": "Kerjasama eksklusif dengan Yamaha Racing Indonesia, SMK Pertiwi Kuningan menjadi sekolah pertama yang menerapkan kurikulum standar balap motor profesional."
+        },
+        "item_5": {
+            "title": "HUT Ke-45 'Casperday' Dimeriahkan Band Armada",
+            "summary": "Puncak perayaan ulang tahun sekolah 'Casperday' berlangsung pecah dengan penampilan spesial dari Band Armada yang menghibur ribuan siswa dan alumni."
+        },
+        "item_6": {
+            "title": "Kunjungan Studi Banding Axioo Class Program",
+            "summary": "Menjadi rujukan nasional, SMK Pertiwi menerima kunjungan studi banding dari 13 SMK se-Indonesia terkait implementasi Axioo Class Program."
+        },
+        "item_7": {
+            "title": "Support Yamaha Indonesia untuk Tim Balap Sekolah",
+            "summary": "PT. Yamaha Indonesia Motor Manufacturing (YIMM) menyerahkan bantuan engine dan chasis untuk riset tim balap SMK Pertiwi Kuningan."
+        }
+    },
+    "alumni_data": {
+        "profile_1": {
+            "achievement": "Lulusan terbaik 2022, sekarang bekerja sebagai Software Engineer di Google Indonesia dengan gaji 25 juta/bulan."
+        },
+        "profile_2": {
+            "achievement": "Menjadi Network Engineer di Telkom setelah lulus. Menangani infrastruktur jaringan untuk wilayah Jawa Barat."
+        },
+        "profile_3": {
+            "achievement": "Bekerja di Astra sebagai teknisi senior. Telah mensertifikasi lebih dari 50 mekanik junior."
+        },
+        "profile_4": {
+            "achievement": "Founder startup teknologi pendidikan yang sudah mendapat funding 5 miliar dari investor."
+        },
+        "profile_5": {
+            "achievement": "Mendapat sertifikasi Azure dan bekerja sebagai Cloud Architect di Microsoft dengan gaji 30 juta/bulan."
+        }
+    },
+    "gallery_data": {
+        "item_1": {
+            "title": "Pramuka SMK Pertiwi",
+            "description": "Kegiatan pramuka rutin setiap Jumat sore"
+        },
+        "item_2": {
+            "title": "Latihan Basket",
+            "description": "Tim basket SMK Pertiwi berlatih untuk kompetisi"
+        },
+        "item_3": {
+            "title": "Juara 1 LKS Tingkat Kabupaten",
+            "description": "Siswa RPL meraih juara 1 lomba Web Design"
+        },
+        "item_4": {
+            "title": "Kompetisi Programming",
+            "description": "Delegasi SMK Pertiwi di kompetisi coding"
+        },
+        "item_5": {
+            "title": "Upacara Hari Kemerdekaan",
+            "description": "Upacara bendera memperingati HUT RI"
+        },
+        "item_6": {
+            "title": "MPLS 2024",
+            "description": "Masa Pengenalan Lingkungan Sekolah untuk siswa baru"
+        },
+        "item_7": {
+            "title": "Praktik Mesin TKR",
+            "description": "Siswa TKR praktik perbaikan mesin kendaraan"
+        },
+        "item_8": {
+            "title": "Coding Class RPL",
+            "description": "Siswa RPL belajar web development"
+        },
+        "item_9": {
+            "title": "Praktik Jaringan TKJ",
+            "description": "Konfigurasi jaringan komputer di lab TKJ"
+        },
+        "item_10": {
+            "title": "Pesantren Kilat Ramadan",
+            "description": "Kegiatan rohani di bulan Ramadan"
+        },
+        "item_11": {
+            "title": "Study Tour Ke Jakarta",
+            "description": "Kunjungan industri dan wisata edukasi"
+        },
+        "item_12": {
+            "title": "Pentas Seni Sekolah",
+            "description": "Penampilan seni dan budaya siswa"
+        }
+    }
+}

@@ -4,9 +4,6 @@
     <header class="app-header">
       <div class="header-content">
         <div class="logo-container">
-          <div class="logo">
-            <img src="../assets/SMK_PERTIWI_KUNINGAN-removebg-preview.png" alt="SMK Pertiwi Kuningan" />
-          </div>
           <div class="school-info">
             <h1>Prism</h1>
             <p class="subtitle">SMK Pertiwi Kuningan</p>
@@ -30,36 +27,6 @@
             <i class="fas fa-trash-alt"></i>
           </button>
         </div>
-      </div>
-      <div class="school-tags">
-        <button class="tag" type="button" @click="$emit('go-to-info', { tab: 'jurusan', code: 'RPL' })">
-          <i class="fas fa-code"></i>
-          RPL
-        </button>
-        <button class="tag" type="button" @click="$emit('go-to-info', { tab: 'jurusan', code: 'TKJ' })">
-          <i class="fas fa-network-wired"></i>
-          TKJ
-        </button>
-        <button class="tag" type="button" @click="$emit('go-to-info', { tab: 'jurusan', code: 'TKR' })">
-          <i class="fas fa-car"></i>
-          TKR
-        </button>
-        <button class="tag" type="button" @click="$emit('go-to-info', { tab: 'jurusan', code: 'TSM' })">
-          <i class="fas fa-motorcycle"></i>
-          TSM
-        </button>
-        <button class="tag" type="button" @click="$emit('go-to-info', { tab: 'jurusan', code: 'TO' })">
-          <i class="fas fa-microchip"></i>
-          TO
-        </button>
-        <button class="tag" type="button" @click="$emit('go-to-info', { tab: 'jurusan', code: 'LP' })">
-          <i class="fas fa-university"></i>
-          LP
-        </button>
-        <button class="tag" type="button" @click="$emit('go-to-info', { tab: 'jurusan', code: 'BDP' })">
-          <i class="fas fa-chart-line"></i>
-          BDP
-        </button>
       </div>
     </header>
 
@@ -950,10 +917,10 @@ export default {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: white;
+  color: var(--primary-color);
   flex-shrink: 0;
   overflow: hidden;
-  border: none;
+  border: 1px solid var(--border-color);
 }
 
 .logo img {
@@ -966,14 +933,25 @@ export default {
 .school-info h1 {
   margin: 0;
   font-size: 1rem;
-  font-weight: 600;
-  color: var(--text-primary);
+  font-weight: 700;
+  color: var(--text-primary); /* Ensure this is dark in light mode */
+}
+
+/* Force dark text for header in light mode */
+:global(html:not(.dark)) .chat-app .school-info h1 {
+  color: #0f172a !important; /* Slate-900 */
 }
 
 .subtitle {
   font-size: 0.75rem;
   color: var(--text-secondary);
   margin: 0.125rem 0 0;
+  font-weight: 500;
+}
+
+/* Force dark text for subtitle in light mode */
+:global(html:not(.dark)) .chat-app .subtitle {
+  color: #334155 !important; /* Slate-700 */
 }
 
 .conversation-title {
@@ -1021,25 +999,6 @@ export default {
   color: var(--primary-dark);
 }
 
-.school-tags {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-}
-
-.tag {
-  padding: 0.25rem 0.6rem;
-  border-radius: 12px;
-  font-size: 0.7rem;
-  font-weight: 600;
-  background: var(--primary-light);
-  color: var(--primary-dark);
-  border: 1px solid var(--border-color);
-  white-space: nowrap;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
-}
 
 .connection-banner {
   display: flex;
@@ -1315,6 +1274,7 @@ export default {
   color: var(--text-primary);
   display: -webkit-box;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -1548,9 +1508,17 @@ export default {
 
 .message-wrapper.ai .message-bubble {
   background: var(--ai-msg-bg);
-  color: var(--ai-msg-text);
+  color: var(--ai-msg-text); /* Use variable but ensure it is dark */
   border-radius: 12px;
   border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-light);
+  font-weight: 500; /* Increase weight */
+}
+
+/* Force dark text if variables fail in light mode context (fallback) */
+:global(html:not(.dark)) .chat-app .message-wrapper.ai .message-bubble {
+    color: #0f172a !important; /* Slate-900 */
+    background: #ffffff !important;
 }
 
 .message-bubble p {

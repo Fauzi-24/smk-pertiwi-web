@@ -1,4 +1,4 @@
-from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form
+from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, HTMLResponse, StreamingResponse
 from pydantic import BaseModel
@@ -16,6 +16,26 @@ import io
 
 from .config import settings
 from .services.gemini_service import chatbot
+from .services import email_service
+from .database import engine, Base, get_db
+from sqlalchemy.orm import Session
+from . import models
+from .routers import admin
+
+# Initialize email service with credentials from environment
+try:
+    email_user = os.getenv('EMAIL_USER', 'ozieefauzi599@gmail.com')
+    email_password = os.getenv('EMAIL_PASSWORD', '')
+    if email_password and email_password != 'YOUR_GMAIL_APP_PASSWORD_HERE':
+        email_service.set_email_credentials(email_user, email_password)
+        print(f"✅ Email service initialized with {email_user}")
+    else:
+        print("⚠️ Email service not configured - Set EMAIL_PASSWORD in .env")
+except Exception as e:
+    print(f"⚠️ Email service initialization failed: {e}")
+
+# Create database tables
+Base.metadata.create_all(bind=engine)
 
 # Model data
 class ChatRequest(BaseModel):
@@ -24,6 +44,7 @@ class ChatRequest(BaseModel):
     history: Optional[List] = None
     memory: Optional[List[str]] = None
     conversation_id: Optional[str] = None
+    language: Optional[str] = "id"
 
 class FeedbackRequest(BaseModel):
     question: Optional[str] = None
@@ -47,6 +68,48 @@ class HealthResponse(BaseModel):
     version: str
     timestamp: str
 
+class PPDBRegistrationCreate(BaseModel):
+    nisn: str
+    full_name: str
+    place_of_birth: str
+    date_of_birth: str
+    gender: str
+    religion: str
+    school_origin: str
+    email: str
+    phone: str
+    address: str
+    father_name: str
+    father_job: str
+    mother_name: str
+    mother_job: str
+    parent_phone: str
+    parent_income: str
+    parent_address: str
+    major_choice: str
+    graduation_year: int
+    average_score: Optional[str] = None
+
+class PPDBStatusResponse(BaseModel):
+    nisn: str
+    full_name: str
+    status: str
+    major_choice: str
+    notes: Optional[str] = None
+    created_at: datetime
+
+class NewsCreate(BaseModel):
+    title: str
+    content: str
+    image_url: Optional[str] = None
+
+class NewsResponse(BaseModel):
+    id: int
+    title: str
+    content: str
+    image_url: Optional[str] = None
+    created_at: datetime
+
 # Inisialisasi FastAPI
 app = FastAPI(
     title=settings.app_name,
@@ -64,6 +127,13 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Security Headers & Rate Limiting
+from .middleware.security import SecurityHeadersMiddleware
+from .middleware.rate_limit import RateLimitMiddleware
+
+app.add_middleware(SecurityHeadersMiddleware)
+app.add_middleware(RateLimitMiddleware)
 
 # Store chat sessions (in production, use database)
 chat_sessions = {}
@@ -468,6 +538,88 @@ async def chat_with_ai(payload: ChatRequest, request: Request):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
 
+@app.post("/api/chat/stream")
+async def chat_with_ai_stream(payload: ChatRequest, request: Request):
+    """Endpoint untuk streaming chat dengan AI"""
+    try:
+        _check_rate_limit(request)
+        if not payload.message.strip():
+            raise HTTPException(status_code=400, detail="Pesan tidak boleh kosong")
+
+        if _is_blocked_message(payload.message):
+             return StreamingResponse(
+                io.StringIO(json.dumps({
+                    "type": "error",
+                    "content": "Maaf, saya tidak bisa membantu dengan bahasa tersebut. Silakan gunakan bahasa yang sopan."
+                }) + "\n"),
+                media_type="application/x-ndjson"
+            )
+        
+        # Gunakan session_id atau buat baru
+        session_id = payload.session_id or f"session_{datetime.now().timestamp()}"
+        
+        # Dapatkan atau inisialisasi riwayat sesi
+        if session_id not in chat_sessions:
+            chat_sessions[session_id] = []
+        
+        # Dapatkan konteks file
+        file_context_text = _get_file_context_text(session_id, payload.conversation_id)
+        
+        # Prepare history for context
+        history_for_context = payload.history or chat_sessions.get(session_id, [])
+        
+        # Add user message to history immediately
+        chat_sessions[session_id].append({
+            "role": "user",
+            "message": payload.message,
+            "timestamp": datetime.now().isoformat()
+        })
+        
+        async def generate():
+            full_response = ""
+            source_label = "model"
+            try:
+                # Stream from chatbot service
+                stream_generator = chatbot.get_response_stream(
+                    payload.message, 
+                    history=history_for_context,
+                    memory=payload.memory, 
+                    file_context=file_context_text
+                )
+                
+                async for chunk_str in stream_generator:
+                    # chunk_str is already a JSON string with newline
+                    chunk_data = json.loads(chunk_str)
+                    if chunk_data["type"] == "chunk":
+                        full_response += chunk_data["content"]
+                    elif chunk_data["type"] == "source":
+                        source_label = chunk_data.get("label")
+                        
+                    yield chunk_str
+                    
+                # After streaming is done, enable session_id return
+                yield json.dumps({"type": "meta", "session_id": session_id}) + "\n"
+                
+                # Update history with full AI response
+                chat_sessions[session_id].append({
+                    "role": "assistant",
+                    "message": full_response,
+                    "timestamp": datetime.now().isoformat(),
+                    "source": source_label
+                })
+                
+                # Trim history
+                if len(chat_sessions[session_id]) > 50:
+                    chat_sessions[session_id] = chat_sessions[session_id][-50:]
+
+            except Exception as e:
+                yield json.dumps({"type": "error", "content": str(e)}) + "\n"
+
+        return StreamingResponse(generate(), media_type="application/x-ndjson")
+
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
+
 @app.get("/api/session/{session_id}")
 async def get_session_history(session_id: str):
     """Dapatkan riwayat chat berdasarkan session_id"""
@@ -654,6 +806,101 @@ async def clear_files(session_id: Optional[str] = None, conversation_id: Optiona
         raise HTTPException(status_code=404, detail="Tidak ada file untuk dihapus")
     return {"success": True, "message": "Lampiran dibersihkan"}
 
+@app.post("/api/ppdb/register", response_model=PPDBStatusResponse)
+async def register_ppdb(payload: PPDBRegistrationCreate, db: Session = Depends(get_db)):
+    """Mendaftar siswa baru"""
+    # Check existing
+    existing = db.query(models.PPDBRegistration).filter(models.PPDBRegistration.nisn == payload.nisn).first()
+    if existing:
+        raise HTTPException(status_code=400, detail="NISN sudah terdaftar. Silakan cek status pendaftaran.")
+    
+    new_reg = models.PPDBRegistration(
+        nisn=payload.nisn,
+        full_name=payload.full_name,
+        place_of_birth=payload.place_of_birth,
+        date_of_birth=payload.date_of_birth,
+        gender=payload.gender,
+        religion=payload.religion,
+        school_origin=payload.school_origin,
+        email=payload.email,
+        phone=payload.phone,
+        address=payload.address,
+        father_name=payload.father_name,
+        father_job=payload.father_job,
+        mother_name=payload.mother_name,
+        mother_job=payload.mother_job,
+        parent_phone=payload.parent_phone,
+        parent_income=payload.parent_income,
+        parent_address=payload.parent_address,
+        major_choice=payload.major_choice,
+        graduation_year=payload.graduation_year,
+        average_score=payload.average_score,
+        status="pending"
+    )
+    db.add(new_reg)
+    db.commit()
+    db.refresh(new_reg)
+    
+    # Send registration confirmation email (async, non-blocking)
+    try:
+        await email_service.send_registration_email(
+            student_email=payload.email,
+            student_name=payload.full_name,
+            nisn=payload.nisn,
+            major=payload.major_choice
+        )
+        print(f"✅ Registration email sent to {payload.email}")
+    except Exception as e:
+        # Log error but don't fail the registration
+        print(f"⚠️ Failed to send registration email: {e}")
+    
+    return new_reg
+
+@app.get("/health", response_model=HealthResponse)
+async def health_check():
+    return {
+        "status": "online",
+        "app_name": settings.app_name,
+        "version": "1.0.0",
+        "timestamp": datetime.now().isoformat()
+    }
+
+@app.get("/api/ppdb/status/{nisn}", response_model=PPDBStatusResponse)
+async def check_ppdb_status(nisn: str, db: Session = Depends(get_db)):
+    """Cek status pendaftaran berdasarkan NISN"""
+    reg = db.query(models.PPDBRegistration).filter(models.PPDBRegistration.nisn == nisn).first()
+    if not reg:
+        raise HTTPException(status_code=404, detail="Data pendaftaran tidak ditemukan.")
+    return reg
+
+
+@app.get("/api/news", response_model=List[NewsResponse])
+async def list_news(db: Session = Depends(get_db)):
+    items = db.query(models.News).filter(models.News.is_published == True).order_by(models.News.created_at.desc()).all()
+    return [
+        NewsResponse(
+            id=item.id, title=item.title, content=item.content,
+            image_url=item.image_url, created_at=item.created_at
+        ) for item in items
+    ]
+
+@app.post("/api/admin/news", response_model=NewsResponse)
+async def create_news(payload: NewsCreate, request: Request, db: Session = Depends(get_db)):
+    _require_admin(request)
+    new_item = models.News(
+        title=payload.title,
+        content=payload.content,
+        image_url=payload.image_url,
+        is_published=True
+    )
+    db.add(new_item)
+    db.commit()
+    db.refresh(new_item)
+    return NewsResponse(
+        id=new_item.id, title=new_item.title, content=new_item.content,
+        image_url=new_item.image_url, created_at=new_item.created_at
+    )
+
 @app.exception_handler(HTTPException)
 async def http_exception_handler(request: Request, exc: HTTPException):
     return JSONResponse(
@@ -664,6 +911,8 @@ async def http_exception_handler(request: Request, exc: HTTPException):
             "timestamp": datetime.now().isoformat()
         }
     )
+
+app.include_router(admin.router)
 
 if __name__ == "__main__":
     uvicorn.run(

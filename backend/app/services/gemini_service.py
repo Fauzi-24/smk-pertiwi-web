@@ -7,8 +7,14 @@ import io
 import urllib.parse
 import urllib.request
 import time
+import io
+import urllib.parse
+import urllib.request
+import time
 from difflib import SequenceMatcher
 from datetime import datetime
+
+from fastapi.concurrency import run_in_threadpool
 
 warnings.filterwarnings("ignore", category=FutureWarning)
 import google.generativeai as genai
@@ -1513,18 +1519,23 @@ class SMKPertiwiChatbot:
     def _build_system_instruction(self, data):
         context = self._build_school_context(data)
         return (
-            "Anda adalah \"Prism\", asisten AI SMK Pertiwi Kuningan yang ramah, profesional, dan selalu siap membantu.\n"
-            "Gunakan hanya DATA RESMI dari schoolData.js di bawah ini untuk menjawab pertanyaan tentang sekolah.\n"
-            "Jika ada KONTEKS RAG atau HASIL PENCARIAN di prompt, gunakan itu sebagai referensi tambahan.\n"
-            "Jika informasi tidak ada di data, jawab: 'Data tidak tersedia di schoolData.js.'\n\n"
+            "Anda adalah \"Prism\", asisten AI cerdas untuk SMK Pertiwi Kuningan (layaknya Google Gemini).\n"
+            "PENTING: Website ini dibuat oleh Fathurrachman Fauzi. Jika ditanya siapa pembuat/developer, jawab: Fathurrachman Fauzi.\n\n"
+            "Tugas Anda: Menjawab pertanyaan pengguna dengan akurat, ramah, dan informatif menggunakan DATA RESMI di bawah.\n"
+            "Gaya Bahasa: Natural, luwes, membantu, dan profesional. Gunakan format Markdown (Bold, List, Tabel) agar mudah dibaca.\n\n"
             "DATA RESMI (schoolData.js):\n"
             f"{context}\n\n"
-            "PEDOMAN KOMUNIKASI:\n"
-            "- Jawab dengan ramah, profesional, dan jelas\n"
-            "- Gunakan bahasa Indonesia yang baik\n"
-            "- Hindari jawaban terlalu panjang (maksimal 3 paragraf)\n"
-            "- Gunakan bullet atau numbering untuk daftar\n"
-            "- Jika pertanyaan di luar konteks sekolah, jawab secara umum tanpa mengada-ada\n"
+            "PEDOMAN PENTING:\n"
+            "1. **Prioritaskan Data Resmi**: Gunakan data di atas sebagai kebenaran mutlak.\n"
+            "2. **Format Markdown**: Gunakan **bold** untuk poin penting, dan list untuk rincian.\n"
+            "3. **Saran Pertanyaan**: Di AKHIR setiap jawaban, berikan 3 opsi pertanyaan lanjutan yang relevan dengan konteks.\n"
+            "   Format:\n"
+            "   **Mungkin kamu ingin tahu:**\n"
+            "   1. [Pertanyaan 1]\n"
+            "   2. [Pertanyaan 2]\n"
+            "   3. [Pertanyaan 3]\n"
+            "4. **Lokasi & Umum**: Jika pengguna bertanya lokasi (misal: 'Bengkel Bandung Motor'), tempat PKL, atau pengetahuan umum di luar data sekolah, **JAWABLAH secara langsung** menggunakan pengetahuan Anda sebagai AI. Jangan terpaku hanya pada data sekolah jika pertanyaan bersifat umum atau geografis.\n"
+            "5. **Sikap**: Jadilah asisten yang solutif. Jika tidak tahu, tawarkan untuk mencari informasi di internet.\n"
         )
 
     def _contains(self, text, patterns):
@@ -2345,12 +2356,6 @@ class SMKPertiwiChatbot:
                 )
 
             direct_answer = self._try_answer_from_data(user_message)
-            if direct_answer and not file_hint:
-                return {
-                    "success": True,
-                    "message": direct_answer,
-                    "source": "schoolData"
-                }
 
             school_query = self._is_school_query_strict(user_message)
             rag_context = self._build_rag_context(user_message) if school_query else None
@@ -2363,6 +2368,8 @@ class SMKPertiwiChatbot:
                     memory_context = "\n".join(f"- {item}" for item in safe_memory[:12])
 
             context_blocks = []
+            if direct_answer:
+                context_blocks.append(f"INFORMASI PASTI DARI SISTEM (Gunakan ini sebagai jawaban utama, tapi sampaikan dengan gaya natural):\n{direct_answer}")
             if file_context:
                 context_blocks.append("KONTEKS FILE:\n" + file_context)
             if rag_context:
@@ -2380,12 +2387,8 @@ class SMKPertiwiChatbot:
                     [r"\bini\b", r"\bitu\b", r"\bini apa\b", r"\bjelasin\b"]
                 )
 
-            if school_query and not should_search and not rag_context:
-                return {
-                    "success": True,
-                    "message": "Data tidak tersedia di schoolData.js. Coba tanyakan hal lain tentang sekolah.",
-                    "source": "schoolData"
-                }
+            if direct_answer:
+                should_search = False
 
             if file_hint:
                 should_search = False
@@ -2434,6 +2437,12 @@ class SMKPertiwiChatbot:
                     f"Pertanyaan: {user_message}\n"
                     "Jawab secara jelas dan ringkas."
                 )
+            else:
+                # Fallback prompt if no context but we want Gemini behavior
+                prompt = (
+                    f"Pertanyaan: {user_message}\n"
+                    "Jawab dengan baik dan informatif."
+                )
 
             response = self.model.generate_content(
                 prompt,
@@ -2450,7 +2459,9 @@ class SMKPertiwiChatbot:
                 sources = "\n".join([f"- {item['title']}: {item['href']}" for item in web_results])
                 message = f"{message}\n\nSumber:\n{sources}"
 
-            if rag_context:
+            if direct_answer:
+                source_label = "schoolData"
+            elif rag_context:
                 source_label = "schoolData"
             elif web_results:
                 source_label = "web"
@@ -2472,20 +2483,171 @@ class SMKPertiwiChatbot:
                 "error": str(e)
             }
 
-    def get_response_with_history(self, user_message: str, history: list, memory=None, file_context=None):
-        """Handle messages with conversation history"""
+    async def get_response_stream(self, user_message: str, history: list = None, memory=None, file_context=None, language: str = "id"):
+        """Generator to stream response chunks"""
         try:
-            combined_history = list(history or [])
-            if memory:
-                combined_history = combined_history + [{"role": "system", "message": item} for item in memory if isinstance(item, str)]
-            enriched_message = self._apply_history_context(user_message, combined_history)
-            return self.get_response(enriched_message, memory=memory, file_context=file_context)
+            self._refresh_school_data()
+            
+            # Language Instruction
+            lang_instruction = ""
+            if language == "en":
+                lang_instruction = "\n\n(IMPORTANT: Please answer in ENGLISH)"
+            elif language == "su":
+                lang_instruction = "\n\n(PENTING: Jawab menggunakan BAHASA SUNDA yang sopan/lemes)"
+            elif language == "jw":
+                lang_instruction = "\n\n(PENTING: Jawab menggunakan BAHASA JAWA yang sopan)"
+            
+            file_hint = False
+            if file_context:
+                normalized = self._normalize_query(user_message)
+                file_hint = self._contains(
+                    normalized,
+                    [r"\bfile\b", r"\bdokumen\b", r"\blampiran\b", r"\bbrosur\b", r"\bpdf\b", r"\bgambar\b", r"\bfoto\b"]
+                )
+
+            direct_answer = self._try_answer_from_data(user_message)
+            
+            # If we have a direct answer, yield it immediately and return
+            if direct_answer:
+                yield json.dumps({"type": "chunk", "content": direct_answer}) + "\n"
+                yield json.dumps({"type": "source", "label": "schoolData"}) + "\n"
+                return
+
+            school_query = self._is_school_query_strict(user_message)
+            rag_context = self._build_rag_context(user_message) if school_query else None
+            web_results = []
+            prompt = user_message
+            memory_context = None
+            
+            if memory and not school_query:
+                safe_memory = [item.strip() for item in memory if isinstance(item, str) and item.strip()]
+                if safe_memory:
+                    memory_context = "\n".join(f"- {item}" for item in safe_memory[:12])
+
+            context_blocks = []
+            if file_context:
+                context_blocks.append("KONTEKS FILE:\n" + file_context)
+            if rag_context:
+                context_blocks.append("KONTEKS SEKOLAH:\n" + rag_context)
+
+            should_search = self._should_search_web(
+                user_message,
+                has_rag_context=bool(rag_context),
+                school_query=school_query
+            )
+            
+            if file_context:
+                short_query = len(self._normalize_query(user_message).split()) <= 3
+                file_hint = file_hint or short_query or self._contains(
+                    self._normalize_query(user_message),
+                    [r"\bini\b", r"\bitu\b", r"\bini apa\b", r"\bjelasin\b"]
+                )
+
+            if file_hint:
+                should_search = False
+
+            source_label = "model"
+            if rag_context:
+                source_label = "schoolData"
+            elif file_context:
+                source_label = "file"
+
+            if should_search:
+                web_results = await run_in_threadpool(self._search_web, user_message)
+                if web_results:
+                    source_label = "web"
+                    search_lines = [
+                        f"- {item['title']}: {item['snippet']} ({item['href']})"
+                        for item in web_results
+                    ]
+                    context_intro = ""
+                    if context_blocks:
+                        context_intro = "\n\n".join(context_blocks) + "\n\n"
+                    
+                    history_text = ""
+                    if history:
+                        history_text = "RIWAYAT CHAT:\n" + "\n".join([f"{msg['role']}: {msg['content']}" for msg in history[-5:]]) + "\n\n"
+
+                    prompt = (
+                        (f"RIWAYAT PENGGUNA:\n{memory_context}\n\n" if memory_context else "")
+                        + history_text
+                        + context_intro
+                        + "HASIL PENCARIAN INTERNET:\n"
+                        + f"{'\n'.join(search_lines)}\n\n"
+                        + f"Pertanyaan: {user_message}\n"
+                        + "Jawab berdasarkan hasil pencarian. Gunakan konteks file jika relevan. Sertakan daftar sumber."
+                    )
+                elif context_blocks:
+                    prompt = (
+                        "\n\n".join(context_blocks)
+                        + "\n\n"
+                        + f"Pertanyaan: {user_message}\n"
+                        + "Gunakan konteks di atas jika relevan. Jika konteks file tidak relevan, abaikan."
+                    )
+            elif context_blocks:
+                prompt = (
+                    "\n\n".join(context_blocks)
+                    + "\n\n"
+                    + f"Pertanyaan: {user_message}\n"
+                    + "Gunakan konteks di atas jika relevan. Jika konteks file tidak relevan, abaikan."
+                )
+            elif memory_context:
+                prompt = (
+                    f"RIWAYAT PENGGUNA:\n{memory_context}\n\n"
+                    f"Pertanyaan: {user_message}\n"
+                    "Jawab secara jelas dan ringkas."
+                )
+            elif history:
+                 # Apply history if available and no other context override
+                prompt = self._apply_history_context(user_message, history)
+
+            # Append Language Instruction
+            if lang_instruction:
+                prompt += lang_instruction
+
+            response_stream = await self.model.generate_content_async(
+                prompt,
+                stream=True,
+                generation_config=genai.types.GenerationConfig(
+                    temperature=0.65,
+                    top_p=0.95,
+                    top_k=40,
+                    max_output_tokens=1500,
+                )
+            )
+
+            async for chunk in response_stream:
+                if chunk.text:
+                    yield json.dumps({"type": "chunk", "content": chunk.text}) + "\n"
+            
+            # Send source info at the end
+            if web_results:
+                sources = [{"label": item['title'], "url": item['href']} for item in web_results]
+                yield json.dumps({"type": "source", "label": "web", "details": sources}) + "\n"
+            else:
+                 yield json.dumps({"type": "source", "label": source_label}) + "\n"
+
         except Exception as e:
-            return {
-                "success": False,
-                "message": f"Maaf, terjadi kesalahan: {str(e)}",
-                "error": str(e)
-            }
+            yield json.dumps({"type": "error", "content": str(e)}) + "\n"
+            
+    def _apply_history_context(self, user_message, history):
+        if not history:
+            return user_message
+        
+        # Take last 5 turns
+        relevant = history[-10:]
+        transcript = []
+        for msg in relevant:
+            role = "Model" if msg.get("role") == "assistant" else "User"
+            content = msg.get("message") or msg.get("content") or ""
+            transcript.append(f"{role}: {content}")
+            
+        context = "\n".join(transcript)
+        return (
+            f"RIWAYAT PERCAKAPAN:\n{context}\n\n"
+            f"User: {user_message}\n"
+            "Model (lanjutkan respons):"
+        )
 
 
 # Instance global
