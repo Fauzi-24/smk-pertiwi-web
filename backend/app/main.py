@@ -2,14 +2,29 @@ from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form, Dep
 import os
 
 # Determine root path for Vercel
-root_path = "/api" if os.getenv("VERCEL") else ""
+# root_path = "/api" if os.getenv("VERCEL") else ""
 
 app = FastAPI(
     title="SMK Pertiwi Chatbot API",
     description="API for SMK Pertiwi Website & Chatbot",
     version="1.0.0",
-    root_path=root_path
+    docs_url="/docs",
+    redoc_url="/redoc",
+    # root_path=root_path 
 )
+
+@app.get("/api/debug")
+def debug_root(request: Request):
+    return {
+        "status": "online",
+        "message": "Backend Vercel is reachable!",
+        "path": request.url.path,
+        "env_check": {
+            "has_db_url": bool(os.getenv("DATABASE_URL")),
+            "has_gemini": bool(os.getenv("GEMINI_API_KEY")),
+            "vercel_env": bool(os.getenv("VERCEL"))
+        }
+    }
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, HTMLResponse, StreamingResponse
 from pydantic import BaseModel
