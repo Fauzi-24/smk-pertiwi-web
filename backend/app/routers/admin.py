@@ -137,21 +137,35 @@ def record_login_attempt(ip: str, success: bool):
 
 @router.post("/login", response_model=AdminLoginResponse)
 def admin_login(request: AdminLoginRequest, req: Request):
-    client_ip = req.client.host
+    # Get IP properly behind Vercel Proxy
+    forwarded = req.headers.get("X-Forwarded-For")
+    if forwarded:
+        client_ip = forwarded.split(",")[0]
+    else:
+        client_ip = req.client.host if req.client else "unknown"
     
+    print(f"🔍 Login Attempt from IP: {client_ip}")
+
     # Check rate limit before validating key
-    check_login_rate_limit(client_ip)
+    # check_login_rate_limit(client_ip) # Disabled temporarily for debugging
     
     correct_key = settings.admin_key
+    
+    # Debug logs (Check Vercel Function Logs if this prints)
+    print(f"🔑 Received Key: {request.admin_key}")
+    print(f"🔒 Expected Key: {correct_key}")
+    
     if not correct_key:
-        raise HTTPException(status_code=500, detail="Server configuration error")
+        print("❌ Server Error: Admin Key not configured in settings")
+        raise HTTPException(status_code=500, detail="Server configuration error: Admin Key not set")
     
     if request.admin_key == correct_key:
         record_login_attempt(client_ip, True)
         return {"success": True, "token": "admin-session-valid"}
     else:
         record_login_attempt(client_ip, False)
-        raise HTTPException(status_code=401, detail="Invalid Admin Key")
+        print("⛔ Invalid Admin Key provided")
+        raise HTTPException(status_code=401, detail=f"Invalid Admin Key. Received: {request.admin_key}")
 
 @router.get("/ppdb")
 def get_all_ppdb(token: str, db: Session = Depends(database.get_db)):
