@@ -469,9 +469,15 @@ export const ChatAPI = {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ admin_key: key })
       });
-      if (!response.ok) throw new Error('Login failed');
+
+      if (!response.ok) {
+        const errorData = await response.json().catch(() => ({}));
+        throw new Error(errorData.detail || `Login failed (${response.status})`);
+      }
+
       return await response.json();
     } catch (error) {
+      console.error('Admin login error:', error);
       throw error;
     }
   },

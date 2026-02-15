@@ -22,9 +22,17 @@
           </div>
         </div>
 
-        <div v-if="error" class="error-message">
-          <i class="fas fa-exclamation-circle"></i> {{ error }}
+        <div v-if="error" class="error-message" style="background: #fee2e2; color: #dc2626; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border: 1px solid #fca5a5;">
+          <i class="fas fa-exclamation-circle"></i> <b>ERROR:</b> {{ error }}
         </div>
+        
+        <div v-if="debugInfo" class="debug-box" style="background: #f1f5f9; padding: 0.8rem; border-radius: 6px; font-size: 0.8rem; margin-bottom: 1rem; overflow-x: auto;">
+          <pre>{{ debugInfo }}</pre>
+        </div>
+
+        <button type="button" @click="testConnection" class="test-btn" style="width:100%; margin-bottom: 1rem; padding: 0.5rem; background: #64748b; color: white; border: none; border-radius: 6px; cursor: pointer;">
+          <i class="fas fa-plug"></i> Cek Koneksi Server
+        </button>
 
         <button type="submit" :disabled="loading" class="login-btn">
           <span v-if="loading"><i class="fas fa-spinner fa-spin"></i> Memproses...</span>
@@ -48,10 +56,24 @@ export default {
     return {
       adminKey: '',
       loading: false,
-      error: ''
+      error: '',
+      debugInfo: null
     }
   },
   methods: {
+    async testConnection() {
+      this.loading = true;
+      this.debugInfo = 'Checking connection...';
+      try {
+        const res = await fetch('/api/debug');
+        const data = await res.json();
+        this.debugInfo = JSON.stringify(data, null, 2);
+      } catch (e) {
+        this.debugInfo = 'Connection Failed: ' + e.message;
+      } finally {
+        this.loading = false;
+      }
+    },
     async handleLogin() {
       this.loading = true
       this.error = ''
