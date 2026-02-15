@@ -14,6 +14,7 @@ app = FastAPI(
 )
 
 @app.get("/api/debug")
+@app.get("/debug")
 def debug_root(request: Request):
     return {
         "status": "online",
@@ -25,6 +26,18 @@ def debug_root(request: Request):
             "vercel_env": bool(os.getenv("VERCEL"))
         }
     }
+
+@app.exception_handler(404)
+async def custom_404_handler(request: Request, exc):
+    return JSONResponse(
+        status_code=404,
+        content={
+            "success": False,
+            "message": f"Endpoint not found: {request.url.path}",
+            "available_routes": ["/api/admin/login", "/api/debug", "/debug"],
+            "timestamp": datetime.now().isoformat()
+        }
+    )
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, HTMLResponse, StreamingResponse
 from pydantic import BaseModel
