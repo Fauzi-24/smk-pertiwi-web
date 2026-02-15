@@ -4,7 +4,7 @@
       <div class="logo-section">
         <i class="fas fa-user-shield"></i>
         <h2>Admin Portal</h2>
-        <p>SMK Pertiwi Kuningan</p>
+        <p>SMK Pertiwi Kuningan <span style="font-size: 0.7em; opacity: 0.7;">(v1.2 Debug)</span></p>
       </div>
 
       <form @submit.prevent="handleLogin" class="login-form">
