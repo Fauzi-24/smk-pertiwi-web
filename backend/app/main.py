@@ -1,4 +1,15 @@
 from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form, Depends
+import os
+
+# Determine root path for Vercel
+root_path = "/api" if os.getenv("VERCEL") else ""
+
+app = FastAPI(
+    title="SMK Pertiwi Chatbot API",
+    description="API for SMK Pertiwi Website & Chatbot",
+    version="1.0.0",
+    root_path=root_path
+)
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, HTMLResponse, StreamingResponse
 from pydantic import BaseModel
