@@ -10,6 +10,7 @@ DEFAULT_CORS_ORIGINS = [
     "http://127.0.0.1:5173",
     "http://127.0.0.1:5174",
     "http://127.0.0.1:5175",
+    "*", 
 ]
 
 class Settings(BaseSettings):
