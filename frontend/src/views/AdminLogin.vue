@@ -68,9 +68,10 @@ export default {
           this.$router.push('/admin/dashboard')
         }
       } catch (err) {
-        this.error = 'Kunci Admin Salah atau Terjadi Kesalahan.'
+        console.error("Login Error:", err);
+        this.error = err.message || 'Terjadi kesalahan pada server.'
         if (window.$toast) {
-          window.$toast('Login Gagal', 'error')
+          window.$toast(this.error, 'error')
         }
       } finally {
         this.loading = false

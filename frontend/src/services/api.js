@@ -1,6 +1,9 @@
 // API Service untuk SMK Pertiwi Chatbot
 
-const API_BASE_URL = (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
+// Smart URL detection
+const isProd = import.meta.env.PROD;
+const API_BASE_URL = isProd ? '' : (import.meta.env.VITE_API_URL || 'http://localhost:8000').replace(/\/+$/, '');
+console.log('API Base URL:', API_BASE_URL); // Debug log
 
 // Types/Interfaces
 export const ChatAPI = {
